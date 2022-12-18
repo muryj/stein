@@ -15,7 +15,7 @@ export const Socialicons = (params) => {
       <ul>
           {socialprofils.instagram && (
               <li>
-                  <a href={socialprofils.twitch}>
+                  <a href={socialprofils.instagram}>
                       <FaInstagram/>
                   </a>
               </li>
