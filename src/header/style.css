@@ -27,7 +27,7 @@
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
-    font-family: Marcellus;
+    font-family: SansSerif;
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
@@ -179,18 +179,18 @@
     position: relative;
     transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
     padding: 4px 0px;
-    font-family: Marcellus;
+    font-family: SansSerif;
 }
 
 @media (min-width: 768px) {
     .the_menu .menu_item>a {
-        font-size: 4.8vw;
+        font-size: 2vw;
     }
 }
 
 .menu_footer {
     bottom: 0;
-    font-family: Marcellus;
+    font-family: SansSerif;
     font-size: 14px;
     background: var(--primary-color);
 }
