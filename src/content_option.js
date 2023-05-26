@@ -119,12 +119,12 @@ const exhibitions = [{
 const dataportfolio = [{
         img: img1,
         desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/project1",
+        link: "1",
     },
     {
         img: img2,
         desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "2",
     },
     {
         img: img3,

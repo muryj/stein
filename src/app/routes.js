@@ -4,6 +4,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { Publications } from "../pages/publications";
+import { ProjectPage } from "../pages/project";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
@@ -25,7 +26,9 @@ const AnimatedSwitch = withRouter(({ location }) => (
         <Route path="/cv" component={About} />
         <Route path="/projects" component={Portfolio} />
         <Route path="/publications" component={Publications} />
+        <Route path="/publications/:id" component={Publications} />
         <Route path="/contact" component={ContactUs} />
+        <Route path="/project/:id" component={ProjectPage} />
         <Route path="*" component={Home} />
       </Switch>
     </CSSTransition>
