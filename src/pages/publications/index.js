@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {
     meta,
-    exhibitions,
 } from "../../content_option";
 import { ReactTinyLink } from 'react-tiny-link'
+import {publications} from "../../content_option";
 
 export const Publications = () => {
     return (
@@ -17,15 +17,25 @@ export const Publications = () => {
                     <title> Publications | {meta.title}</title>
                     <meta name="description" content={meta.description} />
                 </Helmet>
-                <ReactTinyLink
-                cardSize="medium"
-                showGraphic={true}
-                maxLine={2}
-                minLine={1}
-                url="https://panel-magazine.com/product/issue-9/"
-                header={"My Work in Vogue"}
-                description={"Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla"}
-            />
+                <div className="container">
+                {publications.map(({defaultMedia, url, header, description}, index) =>{
+                    return(
+                        <div key={`${index}${header}`} className="col p-3">
+                        <ReactTinyLink
+                            cardSize="large"
+                            width="100vw"
+                            showGraphic={true}
+                            defaultMedia={defaultMedia}
+                            maxLine={2}
+                            minLine={1}
+                            url={url}
+                            header={header}
+                            description={description}
+                        />
+                        </div>
+                    )
+                })}
+                </div>
             </Container>
         </HelmetProvider>
     );

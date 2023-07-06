@@ -6,8 +6,8 @@ import {  meta } from "../../content_option";
 import { useParams } from 'react-router-dom';
 
 export const ProjectPage = () => {
-    const { project } = useParams();
-    console.log(project)
+    const {id} = useParams();
+    console.log(id, 'here')
     return (
         <HelmetProvider>
             <Container className="About-header">

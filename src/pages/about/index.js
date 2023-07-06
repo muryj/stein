@@ -9,6 +9,10 @@ import {
   exhibitions,
 } from "../../content_option";
 
+function replaceWithBr(str) {
+  return str.replace(/\n/g, "<br />")
+}
+
 export const About = () => {
   return (
     <HelmetProvider>
@@ -62,7 +66,7 @@ export const About = () => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                  <p className="service_desc"  dangerouslySetInnerHTML={{__html: replaceWithBr(data.description)}} />
                 </div>
               );
             })}
