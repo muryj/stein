@@ -49,7 +49,7 @@ export const Socialicons = (params) => {
           </li>
         )}
       </ul>
-      <p>Follow Me</p>
+      <p className="menu_footer">follow me</p>
     </div>
   );
 };

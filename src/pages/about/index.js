@@ -33,7 +33,15 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              <p dangerouslySetInnerHTML={{__html: replaceWithBr(dataabout.aboutme)}}/>
+            </div>
+          </Col>
+          <Col lg="5">
+            <h3 className="color_sec py-4">{""}</h3>
+          </Col>
+          <Col lg="7" className="d-flex align-items-center">
+            <div>
+              <th>{dataabout.description}</th>
             </div>
           </Col>
         </Row>

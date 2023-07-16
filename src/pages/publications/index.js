@@ -22,7 +22,7 @@ export const Publications = () => {
                     return(
                         <div key={`${index}${header}`} className="col p-3">
                         <ReactTinyLink
-                            cardSize="large"
+                            cardSize="medium"
                             width="100vw"
                             showGraphic={true}
                             defaultMedia={defaultMedia}

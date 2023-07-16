@@ -21,7 +21,8 @@ const Headermain = () => {
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
-          <Themetoggle />
+          {/*Commented out for future*/}
+          {/*<Themetoggle />*/}
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
@@ -42,6 +43,9 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/cv" className="my-3">CV</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/relatedprojects" className="my-3">+related projects</Link>
                   </li>
                   <li className="menu_item">
                     <Link  onClick={handleToggle} to="/publications" className="my-3"> PUBLICATIONS</Link>

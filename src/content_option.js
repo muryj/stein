@@ -40,11 +40,11 @@ const meta = {
 };
 
 const introdata = {
-    title: "I’m Olga Stein",
+    title: "I am Olga Stein (Stein Kalynovska-Kravchuk)",
     animated: {
-        first: "I am artist",
-        second: "I run my own art studio",
-        third: "I am ukrainian",
+        first: "I Am? Am I an artist?",
+        second: "Am I really an artist? I am?",
+        third: "Me? Am I an artist?",
     },
     description: "Hello and welcome to my website! My name is Olga and I am artist from Kyiv, Ukraine. Here you can find everything about me!",
     your_img_url: main,
@@ -52,20 +52,21 @@ const introdata = {
 
 const dataabout = {
     title: "Bio",
-    aboutme: "Born in Cherkasy in 1997. Graduated with a bachelor&#39;s degree from the Lviv Academy of Arts, Department of\n" +
-        "Restoration of Works of Art, in 2018. During studies from 2015 to 2018, practiced at the Potocki Palace Museum.\n" +
-        "Also worked as a restorer in temples, including in 2017 artist had an internship at the Garrison Church of the Holy\n" +
-        "Apostles Peter and Paul.\n" +
-        "Graduated from the Kyiv Academy of Arts, Department of Restoration, in 2020. In 2019 had an internship at the\n" +
-        "Kyiv-Pechersk Lavra.\n" +
-        "The restoration work, especially practice in churches greatly influenced the formation of artist style and built its\n" +
-        "technical basis. Artist works are a combination of figurative painting with a modern interpretation of iconographic\n" +
-        "motifs.\n" +
-        "She works with mixed media: tempera, oil, pastels and enamels. In her works Stein raises the question of the\n" +
-        "adaptability of the church and the canonical visual order, rethink the position of the saints and the interpretation\n" +
-        "of major biblical texts in terms of the context of the new spirituality, ethics, morals and feminism.\n" +
-        "Founder and curator of the project of the artist- run art space ‘’thesteinstudio’’."
+    aboutme: "Born in Cherkasy in 1997.\n" +
+        "2018 Graduated with a bachelor&#39;s degree from the Lviv Academy of Arts, Department of\n" +
+        "Restoration of Works of Art.\n" +
+        "2015 — 2018 Practiced at the Bandinelli Palace Museum and worked as a restorer in temples.\n"+
+        "2020 Graduated with a master&#39;s degree from the Kyiv Academy of Arts, Department of Restoration.\n" +
+        "2019 Internship at the Kyiv-Pechersk Lavra.",
+    description: "Olga Stein`s art is a combination of figurative painting with a modern interpretation of\n" +
+        "iconographic motifs. She works with mixed media: tempera, oil, pastels and enamels.\n" +
+        "The restoration work, especially practice in churches greatly influenced the formation of\n" +
+        "artistic style and built its technical basis. In her works the artist raises the question of\n" +
+        "the adaptability of the church and the canonical visual order, rethinking the position of\n" +
+        "the saints and the interpretation of major biblical texts in terms of the context of the\n" +
+        "new spirituality, ethics, morals and feminism."
 };
+
 const education = [
     {
         years: "2018-2020",
@@ -80,21 +81,22 @@ const education = [
 ];
 
 const exhibitions = [{
-    title: "Solo exhibitions",
+    title: "solo exhibitions",
     description: "• 2023 January – “1 solar system” Velychko gallery. Limassol, Cyprus\n" +
         "• 2022 May – “La condition humaine” Kalina gallery &amp; Kalina art Advisor, Paris France \n" +
         "• 2017 January – &quot;Man&quot;, Chatka Zaka Gallery, Lublin, Poland.",
 },
     {
-        title: "Group exhibitions",
-        description: "•2023 March – «ART ON THE BATTLEFRONT», Vogue Ukraine and Natalia Cola foundation, online\n" +
-            "exhibition\n" +
+        title: "selected group exhibitions",
+        description:
+            "• 2023 July - “Transformative identities” Velychko gallery &amp; Minthis Gallery Paphos, Cyprus. Curator: Dimitrios S. Spyrou\n" +
+            "• 2023 June- “Transformative identities” Velychko gallery MeMeraki, Limassol, Cyprus. Curator: Dimitrios S. Spyrou\n" +
+            "• 2023 June- “days, days” <b>Saint Sophia Cathedral National Museum</b> and thesteinstudio. Curator: Stanislav Turina. Kyiv, Ukraine\n" +
+            "• 2023 May- «How are you?» <b>Ukrainian Museum of contemporary art</b>. Yehor Antsygin, Olga Balashova, Galina Gleba, Yuliia Karpets, Anna-Maria Kucherenko, Katerina Libkind, Tetiana Lysun, Oleksandr Solovyov. Kyiv, Ukraine\n" +
+            "• 2023 March – «ART ON THE BATTLEFRONT», Vogue Ukraine and Natalia Cola foundation, online exhibition\n" +
             "• 2023 April – “One Fine 9” A-spade gallery Curator- Alice Bonnot and Rui Guerreiro. Lisabon, Portugal\n" +
-            "• 2023 October – “Anniversary” The Nakedroom gallery and Ukrainian Emergency Art Found. Kyiv,\n" +
-            "Ukraine\n" +
-            "• 2022 December – «CONTRAPUNCT», Curator- Yana Barinova. Albertina Modern Künstlerhaus. Vienna,\n" +
-            "Austria\n" +
-            "\n" +
+            "• 2023 October – “Anniversary” The Nakedroom gallery and Ukrainian Emergency Art Found. Kyiv, Ukraine\n" +
+            "• 2022 December – «CONTRAPUNCT», Curator- Yana Barinova. <b>Albertina Modern</b> Künstlerhaus. Vienna, Austria\n" +
             "• 2022 October – “Opening” TEST Gallery, Curator- Ekateryna Pidgaina. Barcelona, Spain\n" +
             "• 2022 September – “Opening” Helen Ritz gallery. Spain, Valencia\n" +
             "• 2022 July/August – “Sensing places” ODP gallery. Curator- OSTOV art collective. Leipzig, Germany\n" +
@@ -103,19 +105,25 @@ const exhibitions = [{
             "• 2022 May – “Context” Gallery Morfi together with Velychko gallery. Limassol, Cyprus\n" +
             "• 2022 May – “Artists Agains War” Fundacio Palo Alto. Curator- Ekaterina Pidgaina. Spaine, Barcelona.\n" +
             "• 2021 November – “Collectors club. Open dayIV” artist-run space &amp;Theshteinstudio. Kiev, Ukraine\n" +
-            "• 2021 August – “To the studio&quot;, group exhibition and group performance, artist-run space\n" +
-            "&amp;Theshteinstudio. Lviv, Ukraine\n" +
-            "• 2021 May – “Fair of ultra-contemporary Ukrainian art. Open dayIII”. artist-run space &amp;Theshteinstudio.\n" +
-            "Kiev, Ukraine\n" +
+            "• 2021 August – “To the studio&quot;, group exhibition and group performance, artist-run space #theshteinstudio. Lviv, Ukraine\n" +
+            "• 2021 May – “Fair of ultra-contemporary Ukrainian art. Open dayIII”. artist-run space &amp;Theshteinstudio. Kiev, Ukraine\n" +
             "• 2020 December – “First open day” artist-run space &amp;Theshtinstudio. Kiev, Ukraine\n" +
             "• 2020 – &quot;Art in Isolation&quot; Santa Clarita Art virtual gallery, California, USA;\n" +
-            "• 2019 – &quot;NA.MI.STO&quot; - a group project with the support of the Ukrainian Cultural Foundation together\n" +
-            "with NAOMA and Khanenko Museum; Kyiv Ukraine\n" +
+            "• 2019 – &quot;NA.MI.STO&quot; - a group project with the support of the <b>Ukrainian Cultural Foundation together with NAOMA and The Bohdan and Varvara Khanenko National Museum of Arts</b>, Kyiv Ukraine\n" +
             "• 2018 – Gallery Seasons “Winter Preview” Lviv, Ukraine;\n" +
             "• 2017 – Gallery Seasons “Samer Preview” Lviv, Ukraine",
     },
     {
-        title: "Residencies",
+        title: "residencies",
+        description:
+            "• 2023 May –«CARV” Velychko gallery. Limassol, Cyprus Curator: Dimitrios S.Spyrou.\n" +
+            "• 2023 February – A-space gallery &amp; Quinta das Relvas. Curator- Alice Bonnot. Lisabon, Porto. Portugal\n" +
+            "• 2022 May – June - «millstART residency». Curator- Tanja Prusnik. Millstatt, Austria.\n" +
+            "• 2022 May – “Context” Velychko gallery. Limassol Cyprus\n" +
+            "• 2021 May – “Art Nova residence”; Curator- Olga Gricenko, Kremenchuk Ukraine.",
+    },
+    {
+        title: "auctions",
         description: "•2023 May – Velychko gallery. Limassol Cyprus\n" +
             "• 2023 February – A-space gallery &amp; Quinta das Relvas. Curator- Alice Bonnot. Lisabon, Porto. Portugal\n" +
             "• 2022 May – June - «millstART residency». Curator- Tanja Prusnik. Millstatt, Austria.\n" +
@@ -123,19 +131,27 @@ const exhibitions = [{
             "• 2021 May – “Art Nova residence”; Curator- Olga Gricenko, Kremenchuk Ukraine.",
     },
     {
-        title: "Auctions",
-        description: "•2023 May – Velychko gallery. Limassol Cyprus\n" +
-            "• 2023 February – A-space gallery &amp; Quinta das Relvas. Curator- Alice Bonnot. Lisabon, Porto. Portugal\n" +
-            "• 2022 May – June - «millstART residency». Curator- Tanja Prusnik. Millstatt, Austria.\n" +
-            "• 2022 May – “Context” Velychko gallery. Limassol Cyprus\n" +
-            "• 2021 May – “Art Nova residence”; Curator- Olga Gricenko, Kremenchuk Ukraine.",
-    },
-    {
-        title: "Collaborations",
-        description: "• 2022 May – collaboration with the Litkovskaya brand for Kornit fashion week. London, UK\n" +
+        title: "collaboration",
+        description:
+            "• 2022 May – collaboration with the Litkovskaya brand for Kornit fashion week. London, UK\n" +
             "• 2021 – participation in Map of Renovation art project.Kyiv, Ukraine",
     },
 ];
+
+const relatedProjects = {
+    section1: {
+        title: "Section 1",
+        content: "Content 1"
+    },
+    section2: {
+        title: "Section 2",
+        content: "Content 2"
+    },
+    section3: {
+        title: "Section 3",
+        content: "Content 3"
+    }
+}
 
 const dataportfolio = [{
     img: img1,
@@ -360,5 +376,6 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    publications
+    publications,
+    relatedProjects
 };
