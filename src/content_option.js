@@ -40,7 +40,7 @@ const meta = {
 };
 
 const introdata = {
-    title: "I am Olga Stein (Stein Kalynovska-Kravchuk)",
+    title: "Olga Stein (Stein Kalynovska-Kravchuk)",
     animated: {
         first: "I Am? Am I an artist?",
         second: "Am I really an artist? I am?",
@@ -153,65 +153,54 @@ const relatedProjects = {
     }
 }
 
-const dataportfolio = [{
+const dataportfolio = [
+    {
     img: img1,
-    desctiption: "The wisdom of life consists in the elimination of non-essentials.",
     link: "1",
-},
+    },
     {
         img: img2,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "2",
     },
     {
         img: img3,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img4,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img5,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img6,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
 
     {
         img: img7,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img8,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img9,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img10,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img11,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
         img: img12,
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
 ];
