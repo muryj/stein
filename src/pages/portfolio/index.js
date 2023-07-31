@@ -14,11 +14,11 @@ export const Portfolio = () => {
           <title> Projects | {meta.title} </title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
-            <h3 className="mb-4"> Projects </h3>
-          </Col>
-        </Row>
+        {/*<Row className="mb-5 mt-3">*/}
+        {/*  <Col lg="8">*/}
+        {/*    <h3 className="mb-4"> Projects </h3>*/}
+        {/*  </Col>*/}
+        {/*</Row>*/}
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (

@@ -350,7 +350,7 @@ const contactConfig = {
 const socialprofils = {
     facebook: "https://www.facebook.com/olga.stein.161",
     linkedin: "https://www.linkedin.com/in/olga-stein-30aba4240",
-    twitter: "https://www.twitter.com/_Olga_Stein_",
+    twitter: "https://twitter.com/olgafonstein",
     instagram: "https://www.instagram.com/asteinart/",
 };
 

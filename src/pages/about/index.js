@@ -22,11 +22,11 @@ export const About = () => {
           <title> CV | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
-            <h3 className="mb-4">CV</h3>
-          </Col>
-        </Row>
+        {/*<Row className="mb-5 mt-3">*/}
+        {/*  <Col lg="8">*/}
+        {/*    <h3 className="mb-4">CV</h3>*/}
+        {/*  </Col>*/}
+        {/*</Row>*/}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>

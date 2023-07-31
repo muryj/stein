@@ -72,11 +72,11 @@ export const ContactUs = () => {
           <title>{meta.title} | Contact</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
-            <h3 className="mb-4">Contact Me</h3>
-          </Col>
-        </Row>
+        {/*<Row className="mb-5 mt-3">*/}
+        {/*  <Col lg="8">*/}
+        {/*    <h3 className="mb-4">Contact Me</h3>*/}
+        {/*  </Col>*/}
+        {/*</Row>*/}
         <Row className="sec_sp">
           <Col lg="12">
             <Alert

@@ -19,11 +19,11 @@ export const RelatedProjects = () => {
                     <title> +related projects </title>
                     <meta name="description" content={"related projects"} />
                 </Helmet>
-                <Row className="mb-5 mt-3">
-                    <Col lg="8">
-                        <h3 className="mb-4">+related projects</h3>
-                    </Col>
-                </Row>
+                {/*<Row className="mb-5 mt-3">*/}
+                {/*    <Col lg="8">*/}
+                {/*        <h3 className="mb-4">+related projects</h3>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
                 <Row className="sec_sp">
                     <Col lg="5">
                         <h3 className="color_sec py-4">{relatedProjects.section1.title}</h3>
