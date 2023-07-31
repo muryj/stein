@@ -3,12 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 15px;
 }
 
 .po_item {
-    flex-basis: 30%;
+    flex-basis: 24%;
     position: relative;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
     font-size: 0;
@@ -33,14 +34,14 @@
 /* Styles for larger screens (max 4 items per row) */
 @media screen and (min-width: 772px) {
     .po_item {
-        flex-basis: 25%;
+        flex-basis: 23.8%;
     }
 }
 
 /* Styles for smaller screens (max 3 items per row) */
 @media screen and (max-width: 772px) {
     .po_item {
-        flex-basis: 33%;
+        flex-basis: 31.8%;
     }
 }
 

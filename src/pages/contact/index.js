@@ -74,7 +74,7 @@ export const ContactUs = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
+            <h3 className="mb-4">Contact Me</h3>
           </Col>
         </Row>
         <Row className="sec_sp">

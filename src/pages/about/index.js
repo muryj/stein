@@ -24,7 +24,7 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">CV</h1>
+            <h3 className="mb-4">CV</h3>
           </Col>
         </Row>
         <Row className="sec_sp">

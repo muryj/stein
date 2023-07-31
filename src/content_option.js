@@ -116,7 +116,7 @@ const exhibitions = [{
     {
         title: "residencies",
         description:
-            "• 2023 May –«CARV” Velychko gallery. Limassol, Cyprus Curator: Dimitrios S.Spyrou.\n" +
+            "• 2023 May –”CARV” Velychko gallery. Limassol, Cyprus Curator: Dimitrios S.Spyrou.\n" +
             "• 2023 February – A-space gallery &amp; Quinta das Relvas. Curator- Alice Bonnot. Lisabon, Porto. Portugal\n" +
             "• 2022 May – June - «millstART residency». Curator- Tanja Prusnik. Millstatt, Austria.\n" +
             "• 2022 May – “Context” Velychko gallery. Limassol Cyprus\n" +
@@ -124,11 +124,10 @@ const exhibitions = [{
     },
     {
         title: "auctions",
-        description: "•2023 May – Velychko gallery. Limassol Cyprus\n" +
-            "• 2023 February – A-space gallery &amp; Quinta das Relvas. Curator- Alice Bonnot. Lisabon, Porto. Portugal\n" +
-            "• 2022 May – June - «millstART residency». Curator- Tanja Prusnik. Millstatt, Austria.\n" +
-            "• 2022 May – “Context” Velychko gallery. Limassol Cyprus\n" +
-            "• 2021 May – “Art Nova residence”; Curator- Olga Gricenko, Kremenchuk Ukraine.",
+        description:
+            "• 2022 October – «Way of peace», New-York, USA\n" +
+            "• 2022 October – “Anniversary”, The NakedRoom gallery and Ukrainian Emergency Art Found.Kyiv, Ukraine\n" +
+            "• 2022 June – Palais Dorotheum. Vienna, Austria"
     },
     {
         title: "collaboration",

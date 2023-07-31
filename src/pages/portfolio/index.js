@@ -11,12 +11,12 @@ export const Portfolio = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> Projects | {meta.title} </title>{" "}
+          <title> Projects | {meta.title} </title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4"> Projects </h1>{" "}
+            <h3 className="mb-4"> Projects </h3>
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
