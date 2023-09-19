@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add padding and limit image height */
+.main-image img {
+    max-width: 100%; /* Adjust for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    padding: 50px;
+    max-height: calc(100vh - 100px); /* Adjusted to account for padding */
+}
+
+.main-image-placeholder {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.main {
+    display: flex;
+    flex-direction: row; /* Adjust direction for mobile */
+    justify-content: center; /* Align items vertically at the center for main */
+    align-items: center; /* Align items horizontally at the center for main */
+}
+
+.main-content {
+    padding: 20px;
+    margin-bottom: 50px; /* Add margin to the bottom of the text */
+}
+
+.text-content {
+    margin: 20px 0;
+    text-align: center; /* Center text */
+}
+
+.single-image {
+    display: flex;
+    flex-direction: row; /* Align image and text in a column for singleImage */
+    align-items: center; /* Align items horizontally at the center for singleImage */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.single-image img {
+    max-width: 100%; /* Adjust for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 50px;
+    margin-right: 50px;
+    max-height: calc(100vh - 100px); /* Adjusted to account for padding */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.gallery div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%;
+    align-items: center; /* Center the content horizontally */
+    margin: 10px; /* Add margin for gap between items */
+}
+
+.gallery-text {
+    margin-top: 20px;
+    width: 100%; /* Take up the full width */
+    text-align: center; /* Center the text within the div */
+}
+
+.gallery div img {
+    width: 100%; /* Make sure the image takes up the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.text img {
+    flex: 1; /* Change flex value for the image */
+    max-width: 33.33%; /* Adjust maximum width for the image */
+    height: auto;
+}
+
+.text .text-content {
+    flex: 3; /* Change flex value for the text content */
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .main .single-image {
+        flex-direction: column; /* Display main section in a column on smaller screens */
+        align-items: center;
+    }
+
+    .main-image img, .single-image img {
+        max-height: 100%; /* Adjust height to fit the screen on smaller screens */
+        padding: 0; /* Remove padding on smaller screens */
+        margin-right: 0px;
+    }
+
+    .main-content, .single-image .text-content {
+        margin: 0; /* Remove margin on smaller screens */
+    }
+
+    .text {
+        flex-direction: column-reverse; /* Change the order for mobile */
+    }
+
+    .text img {
+        max-width: 100%; /* Adjust maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .text .text-content {
+        padding: 20px;
+        text-align: center; /* Center text */
+    }
+
+    .text.right .text-content {
+        text-align: right; /* Adjust text alignment for right-aligned text */
+    }
+}
