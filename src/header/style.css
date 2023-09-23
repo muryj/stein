@@ -199,3 +199,8 @@
     color: var(--text-color-2);
     margin-right: 10px;
 }
+
+.copyright-text {
+    color: gray;
+    font-size: 12px;
+}

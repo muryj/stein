@@ -2,8 +2,10 @@
 .po_items_ho {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     row-gap: 15px;
+    column-gap: 15px;
+    padding-bottom: calc(3rem + 5.128vw)
 }
 
 .po_item {
@@ -40,6 +42,10 @@
 
 /* Styles for smaller screens (max 3 items per row) */
 @media screen and (max-width: 772px) {
+    .po_items_ho {
+        row-gap: 5px;
+        column-gap: 5px;
+    }
     .po_item {
         flex-basis: 31.8%;
     }

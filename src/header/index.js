@@ -58,7 +58,10 @@ const Headermain = () => {
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <p className="copyright m-0">copyright(c) {logotext}</p>
+            <div>
+              <p className="copyright m-0 copyright-text">For my talented friend Olga</p>
+              <p className="copyright m-0 copyright-text">engineered by: Yevhenii Muryi</p>
+            </div>
           </div>
         </div>
       </header>

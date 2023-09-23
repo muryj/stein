@@ -1,3 +1,13 @@
+//relatedProjects
+import related1 from './assets/relatedProjects/related1.jpeg'
+import related2 from './assets/relatedProjects/related2.jpeg'
+import related3 from './assets/relatedProjects/related3.jpeg'
+//socialIcons
+import podcasts from './assets/socialIcons/podcasts.jpeg'
+import instagram from './assets/socialIcons/instagram.jpeg'
+import telegram from './assets/socialIcons/telegram.jpeg'
+
+//PROJECTS
 //utopia
 import utopiaMasonry from './assets/projects/utopia/utopia-masonry.jpeg';
 import utopia1 from './assets/projects/utopia/utopia1.jpeg'
@@ -11,7 +21,6 @@ import utopia8 from './assets/projects/utopia/utopia8.jpeg'
 import utopia9 from './assets/projects/utopia/utopia9.jpeg'
 import utopia10 from './assets/projects/utopia/utopia10.jpeg'
 import utopia11 from './assets/projects/utopia/utopia11.jpeg'
-
 //bread
 import breadMasonry from './assets/projects/bread/bread-masonry.jpeg'
 import bread1 from './assets/projects/bread/bread1.jpeg'
@@ -129,6 +138,7 @@ import iconostas1 from './assets/projects/iconostas/iconostas1.jpeg'
 
 import main from './assets/photos/main.jpeg'
 
+//PUBLICATIONS
 import publication1 from './assets/publications/1.jpeg'
 import publication2 from './assets/publications/2.jpeg'
 import publication3 from './assets/publications/3.jpeg'
@@ -149,6 +159,9 @@ import publication17 from './assets/publications/17.jpeg'
 import publication18 from './assets/publications/18.jpeg'
 import publication19 from './assets/publications/19.jpeg'
 import publication20 from './assets/publications/20.jpeg'
+import publication21 from './assets/publications/21.jpeg'
+import publication22 from './assets/publications/22.jpeg'
+
 
 const logotext = "STEIN";
 const meta = {
@@ -239,35 +252,7 @@ const exhibitions = [{
             "• 2022 May – “Context” Velychko gallery. Limassol Cyprus\n" +
             "• 2021 May – “Art Nova residence”; Curator- Olga Gricenko, Kremenchuk Ukraine.",
     },
-    {
-        title: "auctions",
-        description:
-            "• 2022 October – «Way of peace», New-York, USA\n" +
-            "• 2022 October – “Anniversary”, The NakedRoom gallery and Ukrainian Emergency Art Found.Kyiv, Ukraine\n" +
-            "• 2022 June – Palais Dorotheum. Vienna, Austria"
-    },
-    {
-        title: "collaboration",
-        description:
-            "• 2022 May – collaboration with the Litkovskaya brand for Kornit fashion week. London, UK\n" +
-            "• 2021 – participation in Map of Renovation art project.Kyiv, Ukraine",
-    },
 ];
-
-const relatedProjects = {
-    section1: {
-        title: "Section 1",
-        content: "Content 1"
-    },
-    section2: {
-        title: "Section 2",
-        content: "Content 2"
-    },
-    section3: {
-        title: "Section 3",
-        content: "Content 3"
-    }
-}
 
 const publications = [
     {
@@ -387,8 +372,20 @@ const publications = [
     {
         url: "https://elle.ua/ludi/interview/olga-shteyn-pro-ukrainske-mistectvo-ta-chomu-vono-na-chasi/?fbclid=PAAaaaYYystrvx4yy2uxizXGtgIudLeaAYsZZRE2GQMio3PMh5N6qu4bDpQSI_aem_AeUtEorQugvbixmqsq2MSzZyS74CWnSmoWrI2JbJ2eT4ZXcZZz0fXTV41ZQoKSu2ocM",
         header: "ELLE:",
-        description: "Ольга Штейн про українське мистецтво та чому воно «на часі»",
+        description: "Ольга Штейн про українське мистецтво та чому воно «на часі",
         defaultMedia: publication20
+    },
+    {
+        url: "https://elle.ua/stil-zhizni/blog_stil_zhizni/ukrainska-hudozhnicya-olga-shteyn-vzyala-uchast-u-mizhnarodniy-rezidencii-ta-dvoh-vistavkah-transformative-identities-na-kipri/?fbclid=PAAaa6NnjbO1V6FQeGGx8X0SjzShIpKcCYPIaMNmCAi6RQlqnmKQMnGz6bqPU_aem_ATbcwHnaHhQZZr29D-D-J9d1KUKwgdo_TWXGPiwyETBGgdyyBclavdP0ahmoc57Zm5g",
+        header: "ELLE:",
+        description: "УКРАЇНСЬКА ХУДОЖНИЦЯ ОЛЬГА ШТЕЙН ВЗЯЛА УЧАСТЬ У МІЖНАРОДНІЙ РЕЗИДЕНЦІЇ",
+        defaultMedia: publication21
+    },
+    {
+        url: "https://www.wonderzine.com.ua/wonderzine/style/in-my-room/17193-u-kozhniy-kimnati-e-divni-rechi-yaki-ya-lyublyu-hudozhnitsya-olga-shteyn-pro-svoyu-kvartiru",
+        header: "WONDERZINE:",
+        description: "Ольга Штейн для WONDERZIN про власний простір",
+        defaultMedia: publication22
     },
 ]
 const contactConfig = {
@@ -408,6 +405,31 @@ const socialprofils = {
     twitter: "https://twitter.com/olgafonstein",
     instagram: "https://www.instagram.com/asteinart/",
 };
+
+const relatedProjects = {
+    section1: {
+        img: related1,
+        title: '«thesteinstudio»',
+        text: '«thesteinstudio» is an artist-run space based in the centre of Kyiv that has existed since 2020 with the idea of forming a community, creating an independent safe space for chamber expressions, as well as popularising and developing the culture of collecting in Ukraine.\n' +
+            'The project organises exhibitions, residencies, training, artist talks and much more.',
+        link: 'https://instagram.com/thesteinstudio?igshid=MWZjMTM2ODFkZg==',
+        defaultMedia: instagram
+    },
+    section2: {
+        img: related2,
+        title: '«Hi it’s me Stein»',
+        text: '«Hi it’s me Stein» - is the most popular Ukrainian podcast about contemporary art and the art market. Many key Ukrainian gallerists, curators and artists have been guests on this podcast.',
+        link: 'https://podcasts.apple.com/ua/podcast/hi-its-me-stein/id1647556555',
+        defaultMedia: podcasts
+    },
+    section3: {
+        img: related3,
+        title: "«Stein-tg channel»",
+        text: '«Stein-tg channel» - An information channel that collects key articles, podcasts, statements and other newsworthy events relevant to the Ukrainian art space.',
+        link: 'https://t.me/asteinart',
+        defaultMedia: telegram
+    }
+}
 
 const dataportfolio = [
     {
@@ -449,7 +471,7 @@ const dataportfolio = [
     {
         img: templeMasonry,
         link: "temple",
-        title: 'Temple',
+        title: 'TEMPLE',
         year: '2023-ongoing'
     },
     {
@@ -540,7 +562,6 @@ const projects = {
             title: 'Utopia',
             years: '2023 - ongoing',
             desc: 'Series of bas-relief, selected art-pieces below',
-            imageAlign: 'left'
         },
         art: [
             {
@@ -628,7 +649,6 @@ const projects = {
             title: 'Bread',
             years: '2022 - ongoing',
             desc: 'Project, installation',
-            imageAlign: 'right',
             img: bread1
         },
         art: [
@@ -639,7 +659,6 @@ const projects = {
                     'The project delves into the Holodomor, a tragic Ukrainian famine marked by attempted extermination and Stalin\'s colonization policies. It examines how the manipulation of food supply can lead to political starvation and control over populations.\n' +
                     '\n' +
                     'Using diverse artistic mediums, the project visually depicts the evolution of grain exports and the challenges posed by the war.\n',
-                textAlign: 'right'
             }
         ]
     },
@@ -648,14 +667,12 @@ const projects = {
             title: 'Bread Chapter I: The Path Of Bread',
             years: '2022 - ongoing',
             desc: 'Project, installation',
-            imageAlign: 'left',
             img: breadPath1
         },
         art: [
             {
                 type: 'text',
                 text: 'In this part of the project, I created a canvas, a sculpture and a video of the performance. Reflecting and exploring what the ways of exporting grain from Ukraine to the world looked like, and especially now that people are forced to harvest some grain right in the middle of burning fields due to the full-scale invasion, I created a canvas completely filled with coal with a narrow white stripe. During my performance, I first methodically filled the entire canvas with charcoal and then used bread as an eraser. In this way, I was rethinking the role and application of bread. After I used the bread as an eraser, I collected all the leftover bread in a glass box and securely fixed it. This sculpture made of a glass box and bread represents the illusion of availability. In fact, there is enough food in the world for hunger to never exist again, but as soon as bread (food) is misused for other purposes, such as influence, genocide, politics, we have an artificially created famine.',
-                textAlign: 'right'
             },
             {
                 type: 'singleImage',
@@ -673,7 +690,6 @@ const projects = {
                     'The Five Ears of Grain Law had no precedent in world history. Under the circumstances, it effectively prohibited people from disposing of their food. Ukrainians found themselves in a deadly trap: fantastic plans for grain distribution (or, more simply, plans for grain confiscation) condemned peasants to starvation. Any attempts to escape and hide food threatened with confiscation of all edible items (for failure to comply with the grain delivery) or execution.\n' +
                     '\n' +
                     'Thus, people who collected grain, saw it, touched it, and had access to food could not get it and died of starvation.\n',
-                textAlign: 'right'
             },
             {
                 type: 'singleImage',
@@ -696,7 +712,6 @@ const projects = {
             title: 'Bread Chapter II: Toys',
             years: '2022 - ongoing',
             desc: 'Project, installation',
-            imageAlign: 'left',
             img: breadToys1
         },
         art: [
@@ -708,14 +723,12 @@ const projects = {
                     'The main reason for such a repeated return to a traumatic state is usually retraumatisation. It can be an event that takes us back in time.\n' +
                     'In my childhood, I heard a lot of stories from my grandmother about her experience of the Holodomor. I felt certain patterns of upbringing that were conditioned by this experience. My long work with a therapist as an adult largely touched upon the fear and shame of throwing away food, unhealthy relationships with food, and other manifestations of irrational feelings towards a resource I had in abundance. I characterise this as a manifestation of post-memory.\n' +
                     'Coincidentally, I experienced a full-scale invasion in my parents\' home. My father\'s fear of starvation for his family was so great that it began to manifest itself neurotically with irrational prohibitions to touch food, eat certain categories of food stocks, orders to eat only at certain hours, etc. \n',
-                textAlign: 'right'
             },
             {
                 type: 'text',
                 img: breadToys3,
                 text: 'Unfortunately, at a certain point, the level of tension increased so much that it became one of the reasons why I was forced to leave my parents\' house for Lviv.\n' +
                     'While in Lviv, I saw for the first time toys made of cheese, cheese horses - a traditional Carpathian dish, decoration, souvenir and ornament. I was struck by this different tradition and legitimacy of playing with food. To somehow illustrate, understand and live my feelings, I decided to create sculptures using bread as the main material.\n',
-                textAlign: 'right'
             },
             {
                 type: 'singleImage',
@@ -756,7 +769,6 @@ const projects = {
             title: 'Bread Chapter III: Harvest Song',
             years: '2022 - ongoing',
             desc: 'Project, installation',
-            imageAlign: 'left',
             img: breadHarvest1
         },
         art: [
@@ -766,13 +778,11 @@ const projects = {
                 text: 'Thinking about the forms of memory, about how people remember something, I realised that many traumatic events do not leave behind artefacts or physical manifestations, but leave a huge mark on the subconscious, behaviour, culture, and body.\n' +
                     'An important part of my work on these paintings was immersion in the study of epigenetics. Epigenetics is the study of heritable changes in phenotype or gene expression that are caused by mechanisms other than changes in the sequence of DNA nucleotides. Such changes can remain visible for several cell generations or even several generations of living organisms.\n' +
                     'I focused on the memory of the great hunger that remained in the subconscious and in the body at the level of genes. For me, the redundancy of the body, which seems to be trying to build an additional space between the soul and the outside world, looks like a kind of defence programme. These programmes are repeated and highlighted in times of crisis - so after the full-scale invasion, this was the first thing I noticed even in my family, an unreasonable fear that food would run out and there would not be enough.\n',
-                textAlign: 'left'
             },
             {
                 type: 'text',
                 img: breadHarvest3,
                 text: 'It is especially interesting that such a huge fear and memory of hunger is present in a region that is considered the breadbasket of the world, in a region that is famous for grain exports. In Ukraine, a huge part of the cultural heritage is associated with agriculture, with the production of bread, with the process of harvesting. There are many paintings in 20th-century Ukrainian painting depicting everyday scenes of harvesting or resting afterwards. The paintings always depict the classic golden fields of Ukraine. People are an integral part of this process, just as they are an integral part of the landscape.  I hadn\'t paid that much attention to it before, but after the full-scale invasion, the question of how a person practically, their body directly becomes part of the poisoned landscape really came to light. Thinking about this, I created paintings where people are in classic post-harvest resting poses, like from classic 20th century paintings, as if lying on wheat fields, but now the person just merges with the background. This raises the question of what is the main thing in the composition, the person or the background, the person or the landscape, at the same time as the question of what is the main thing, human life or the bread that a person grows.',
-                textAlign: 'right'
             },
             {
                 type: 'singleImage',
@@ -786,11 +796,10 @@ const projects = {
     },
     temple: {
         main: {
-            title: 'Temple',
+            title: 'TEMPLE',
             years: '2023 - ongoing',
             desc: 'installation, ceramic,\n' +
                 'Sculpture \n',
-            imageAlign: 'right',
             img: temple1
         },
         art: [
@@ -836,7 +845,6 @@ const projects = {
             years: '2022 - ongoing',
             desc: 'Series of painting,\n' +
                 'selected art pieces below\n',
-            imageAlign: 'right',
         },
         art: [
             {
@@ -901,7 +909,6 @@ const projects = {
             title: 'LAND',
             years: '2022 - ongoing',
             desc: 'Project, installation',
-            imageAlign: 'left',
         },
         art: [
             {
@@ -909,7 +916,6 @@ const projects = {
                 text: 'The LAND project is planned as a narrative built around the life cycle of the human body, which is biologically closely connected to the idea of land.\n' +
                     'First, the human body is born and nourished by the fruits of the land, then it works with it, protects it. Then a body dies and becomes part of the soil and landscape.\n' +
                     'I record the changes, disruptions and distortions in this circle that occurred due to the war.\n',
-                textAlign: 'left'
             },
         ]
     },
@@ -919,7 +925,6 @@ const projects = {
             years: '2022 - ongoing',
             desc: 'ceramics, installation, painting',
             img: landBirth1,
-            imageAlign: 'left',
         },
         art: [
             {
@@ -953,12 +958,10 @@ const projects = {
             desc: 'Clay, soil, metal, glass, metal\n' +
                 '10х8х5',
             img: landValues1,
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: '  The vision for this chapter of project appeared during the Armed Forces of Ukraine launched a counteroffensive to de-occupy part of Ukrainian territories and the liberation of Kharkiv region in the autumn of 2022, which resulted in many great losses. \n' +
                     '\n' +
                     '  This led me to have an internal dialogue regarding the clashes of moral and religious norms, individual evidence and supremacy, as well as the position of being a citizen and a Christian. I focused on observing the dynamics of values, new humanism, and how humanity perceives the colonial idea of a world where resources are valued more than human life. \n' +
@@ -982,12 +985,10 @@ const projects = {
             desc: 'Photo and video documentation\n' +
                 'Object of clay, soil and metal',
             img: landShield1,
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'I created a metal and clay corset I put on my body on camera. In the middle of the video documentation it becomes obvious that the new body is the body of a pregnant woman. It is at this point that I start filling the inside of my abdomen and chest with earth. All the earth used in the project was brought from the de-occupied territory of Ukraine. \n' +
                     '\n' +
                     '  SHIELD is the centerpiece of my project, which consists of video, photography and sculpture. My goal was to show an allusion to the bodies of all those who defend Ukraine. Through this work, I explore the encapsulation of grief, the functional use of the human body, the substitution of values, and the horror of war.\n',
@@ -995,7 +996,6 @@ const projects = {
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'Throughout the process, the corset deforms, hurts my body, becomes heavier because of the added earth, lives a long life as a real human body, and eventually collapses. \n' +
                     '\n' +
                     '\n' +
@@ -1021,12 +1021,10 @@ const projects = {
             years: '2023',
             desc: 'Ceramic, soil, photography',
             img: landStone1,
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'The last part of the LAND project returns a person  into the land where each becomes a part of it.\n' +
                     '    A big issue during military operations is depersonalized casualty statistics. Dead people become countless numbers, stones in the landscape. At the same time, there is an alleged natural cycle of recycling. Man becomes good for the earth, food is born from the earth, which gives the possibility of a new life.\n',
                 img: landStone2
@@ -1053,12 +1051,10 @@ const projects = {
             years: '2023 — ongoing',
             desc: 'Series of painting,\n' +
                 'selected art pieces below',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text:' Through the series "Body in the Temple", I questioned the system of the anthropocentric world and nuclear deterrence. I believe that international initiatives created to prevent war have failed to do so. In search of an alternative structure with hope, I focused on finding inspiration from the special constructions of Catholic churches that make us think about the size of man in relation to God.\n' +
                     '\n' +
                     'I immersed my imperfect characters under the dome of the church, inspired by the idea of God-fearing, which is one of the not often mentioned virtues of a Christian. I wanted to show the viewer the search for the right place for the ratio of the size of the body to the size of God\'s will. I call the viewer to internal responsibility, which I believe is the only effective form of restraint.\n'
@@ -1108,12 +1104,10 @@ const projects = {
             years: '2022',
             desc: 'Series of painting and ceramics,\n' +
                 'selected art pieces below',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'The project focused on studying the attributes of canonization, collective vitality, and reflections on the "war of monuments" and the war for the right kind of remembrance in post-Soviet Ukraine. These days, debates regarding the demolition of Soviet-era monuments in Ukraine and the general attitude to cultural heritage and conflicts regarding the choice of personalities for monuments have resumed. I also noticed that monuments hidden from bombing seem to create new pedestals without the main character. After analyzing the arguments and debates, I found that the selection mechanism for monuments has similar features to the selection process for canonization.'
             },
             {
@@ -1133,8 +1127,7 @@ const projects = {
             },
             {
                 type: 'text',
-                textAlign: 'right',
-                text: '  In the history of the church, a crucial part of the process following canonization is the establishment of a separate iconography, a visual canon for depicting related plots. With that in mind, I envisioned the process of filling new Ukrainian monuments in tandem with canonization, choosing to install new Ukrainian vitality in the monuments. The project represents a idea of monument to the collective vitality of the Ukrainian people during the war. The project also highlights the problem of choosing a hero and a sufficient victim (who will never be found)\n'
+                text: 'In the history of the church, a crucial part of the process following canonization is the establishment of a separate iconography, a visual canon for depicting related plots. With that in mind, I envisioned the process of filling new Ukrainian monuments in tandem with canonization, choosing to install new Ukrainian vitality in the monuments. The project represents a idea of monument to the collective vitality of the Ukrainian people during the war. The project also highlights the problem of choosing a hero and a sufficient victim (who will never be found)\n'
             },
             {
                 type: 'gallery',
@@ -1153,7 +1146,6 @@ const projects = {
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 img: honors7,
                 text: 'The composition of each image alludes to the life of the Virgin Mary in the stories of the Gospel of Matthew and the Gospel of Mark, which describe the period of the life and death of Jesus on earth. This period is characterized by the Virgin Mary\'s status as the mother of the Messiah, so each canvas needs the presence of the Christ Child, who is absent. The canvas builds the plot accordingly: "Weaning" — of a previously born mission, "The Descent from the Cross" — the death of a child, "Vitality" — a monument of stability, "Christening" — the purification of the followers\' conversion, "Redundant" — a monument of the body that remained with the mission bearer afterwards.'
             },
@@ -1204,19 +1196,16 @@ const projects = {
                 'I SOLAR SYSTEM',
             years: '2022',
             desc: 'Photo print, collage, painting on paper, performance',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'My project "I Solar System" consisted of a 1 collage and 12 sketches. The idea began with an acknowledgement of the fixation of traumatization, which I could only realize in a safe environment.  Working with my psychotherapist on my feelings of guilt for being in a safe place, traumatization, sense of injustice, and fear, I created a project to capture and comprehend this state. \n' +
                     '\n' +
                     'During my daily life in the Cypriot residence, which included visits to the beach, pool, and locker rooms, as well as observing my fellow artists, I noticed that every time I looked at a naked body, I saw photos from the scene of the Russian Federation\'s crimes against Ukraine in Irpin and Bucha - photos of violence against women.'
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 img: solarSystem1,
                 text: ' I asked one of the artists to pose for me in a safe situation - by the pool - and recreated this seemingly everyday process with the help of internal optics, showing what the trauma of internal vision looks like.\n' +
                     '\n' +
@@ -1225,7 +1214,6 @@ const projects = {
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 img: solarSystem2,
                 text: 'The collage from this series is a photo of the artist posing for me, which layered with a photo of residential building destroyed by the Russian army.'
             },
@@ -1237,15 +1225,13 @@ const projects = {
     },
     consecration: {
         main: {
-            title: 'HONORS project',
+            title: 'CONSECRATION',
             years: '2022-ongoing',
             desc: 'Series of graphics',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'I started this project after Russia\'s full-scale invasion of Ukraine as a way of reflecting on Ukraine\'s post-colonial experience. In this project, I reflect on the possibilities of transition of inter-political relations from the colonial-imperial model to the model of equal market relations.\n' +
                     '\n' +
                     'I bought the paper for these works in the countries of the former empires, and it was also a prerequisite that the paper was imported from the former colony. I am exploring the economic relationship between the former empire and the former colony. Interaction with this paper is an important part of the project.  The process of applying certain Christian symbols to the surface is a process of sanctification, in other words, a process of purification or washing away sin. I am trying to understand the conditions under which atonement is possible. How the transition to the context of market relations changes the nature and perception of the transfer of any resources from colony to empire\n'
@@ -1299,12 +1285,10 @@ const projects = {
             title: 'INVASION',
             years: '2022',
             desc: 'Painting on canvas',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'The project was created as part of my first residency after the full-scale invasion of Russia on the territory of Ukraine.\n' +
                     '\n' +
                     'It became the first formed reflection on a full-scale war. Experiencing a crisis of faith, I received an instruction from a priest about asceticism and decided not to separate my spiritual and artistic work. \n' +
@@ -1313,7 +1297,6 @@ const projects = {
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 img: invasion1,
                 text: 'This concept appeared as a reflection on the dulling perception of photos from the crime scenes of the Russian Federation, as well as on the intercepted calls to Russian servicemen from their relatives, in which there was a lot of encouragement for war crimes.\n' +
                     '\n' +
@@ -1362,18 +1345,15 @@ const projects = {
             title: 'ICONOSTAS vol. 2.0',
             years: '2021 — ongoing',
             desc: 'Project, installation',
-            imageAlign: 'left',
         },
         art: [
             {
                 type: 'text',
-                textAlign: 'right',
                 text: 'Iconostas 2.0 is a new sculptural form.\n' +
                     'The project is devoted to the topic of church and social stigmatization of the female body, its sexualization and objectification. It is also about new ethics and morality, which requires a rethinking of church standards. For many years, priests build their teachings and philosophical reflections by interpreting and manipulating the same stories from the Bible. In order to develop this study, I chose the form of work that is being used by Orthodox priests in the preparation for the Sunday sermon. The system of reading parables is built cyclically and is tied to significant events of the church calendar.\n'
             },
             {
                 type: 'text',
-                textAlign: 'right',
                 img: iconostas1,
                 text: 'I chose the iconostasis as a closed ecosystem in which each level and place corresponds to a specific plot and contains a clear iconography\\canon that presents the internal hierarchy widely.\n' +
                     'The iconostasis system works as an public coherent statement. Relying on this visual system and developing it according to the previously described method, I tried to create an imaginary iconostasis of a new time and a new society. I decided to rethink each element (plot) of the iconostasis from the point of view of new ethics and morality, highlighting current problems. Among them are the problem of sexualization and objectification of the female body, the church\'s tolerance of sexism and non-tolerant attitude towards LGBT representatives. \n' +

@@ -1,100 +1,29 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* Adjust direction for mobile */
+    justify-content: center; /* Align items vertically at the center for main */
+    align-items: center; /* Align items horizontally at the center for main */
+    padding-bottom: calc(3rem + 5.128vw)
+}
+.sec_sp img {
+    max-width: 100%; /* Adjust for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-height: calc(100vh - 100px); /* Adjusted to account for padding */
+}
+.img-content {
+    flex: 0.6;
+    padding-right: 50px;
+}
+.text-content {
+    flex: 0.4
 }
 
-.table td,
-.table th {
-    color: var(--text-color);
-}
-
-.t_border {
-    border-color: var(--text-color) !important;
-}
-
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
-    font-family: 'Raleway';
-}
-
-.progress {
-    height: 5px;
-    background: var(--secondary);
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
-}
-
-.progress .progress-bar {
-    position: relative;
-    background: var(--text-color);
-    animation: animate-positive 2s;
-    overflow: visible;
-    opacity: 0.9;
-}
-
-.progress .progress-value {
-    position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-    color: var(--text-color);
-}
-
-@-webkit-keyframes animate-positive {
-    0% {
-        width: 0%;
+@media screen and (max-width: 768px) {
+    .sec_sp {
+        flex-direction: column; /* Adjust direction for mobile */
     }
-}
-
-@keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
-.section-title {
-    font-size: 45px;
-}
-
-.service__title {
-    padding: 8px 0;
-    font-weight: bold;
-}
-
-.service-section .service-category-title {
-    padding-bottom: 4px;
-}
-
-
-/*! CSS Used keyframes */
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
+    .img-content {
+        padding-right: 0;
     }
 }
