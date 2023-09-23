@@ -70,6 +70,7 @@ export const ProjectPage = () => {
                                     <img src={image.img} alt={`Art ${index} - Image ${imageIndex}`} />
                                     <div className="gallery-text">
                                         {image.title && <p>{image.title}</p>}
+                                        {image.year && <p>{image.year}</p>}
                                         {image.desc && <p>{image.desc}</p>}
                                     </div>
                                 </div>
@@ -109,9 +110,9 @@ export const ProjectPage = () => {
                     <meta name="description" content={project.main.desc} />
                 </Helmet>
                 <Row className="mb-5 mt-3">
-                    <Col lg="8">
-                        <h1 className="display-4 mb-4">Project: {project.main.title}</h1>
-                    </Col>
+                    {/*<Col lg="8">*/}
+                    {/*    <h1 className="display-4 mb-4">Project: {project.main.title}</h1>*/}
+                    {/*</Col>*/}
                 </Row>
                 {renderMain()}
                 {renderArt()}
