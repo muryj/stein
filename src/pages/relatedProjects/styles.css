@@ -18,6 +18,10 @@
 .text-content {
     flex: 0.4
 }
+.tiny-link-container {
+    max-width: 100px;
+    max-height: 50px;
+}
 
 @media screen and (max-width: 768px) {
     .sec_sp {

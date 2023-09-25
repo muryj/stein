@@ -43,17 +43,19 @@ export const RelatedProjects = () => {
                     <div className="text-content">
                         <h4>{relatedProjects.section2.title}</h4>
                         <p>{relatedProjects.section2.text}</p>
-                        <ReactTinyLink
-                            cardSize="small"
-                            width="100vw"
-                            showGraphic={true}
-                            maxLine={2}
-                            minLine={1}
-                            header={relatedProjects.section2.title}
-                            url={relatedProjects.section2.link}
-                            description={'Link to podcast'}
-                            defaultMedia={relatedProjects.section2.defaultMedia}
-                        />
+                        <div className="tiny-link-container">
+                            <ReactTinyLink
+                                cardSize="small"
+                                width="100vw"
+                                showGraphic={true}
+                                maxLine={2}
+                                minLine={1}
+                                header={relatedProjects.section2.title}
+                                url={relatedProjects.section2.link}
+                                description={'Link to podcast'}
+                                defaultMedia={relatedProjects.section2.defaultMedia}
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="sec_sp">
