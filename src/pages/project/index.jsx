@@ -99,9 +99,6 @@ export const ProjectPage = () => {
                     <meta name="description" content={project.main.desc}/>
                 </Helmet>
                 <Row className="mb-5 mt-3">
-                    {/*<Col lg="8">*/}
-                    {/*    <h1 className="display-4 mb-4">Project: {project.main.title}</h1>*/}
-                    {/*</Col>*/}
                 </Row>
                 {renderMain()}
                 {renderArt()}

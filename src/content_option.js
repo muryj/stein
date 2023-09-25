@@ -438,40 +438,22 @@ const dataportfolio = [
             {
                 img: landMasonry,
                 link: "land",
-                title: 'LAND',
-                year: '2022-ongoing'
             },
             {
                 img: landSub1Masonry,
                 link: "birth",
-                title: 'LAND\n' +
-                    'Chapter I\n' +
-                    '\n' +
-                    'BIRTH'
             },
             {
                 img: landSub2Masonry,
                 link: "values",
-                title: 'LAND\n' +
-                    'Chapter II\n' +
-                    '\n' +
-                    'VALUES '
             },
             {
                 img: landSub3Masonry,
                 link: 'miscarriageShield',
-                title: 'LAND\n' +
-                    'Chapter III\n' +
-                    '\n' +
-                    'MISCARRIAGE. SHIELD\n'
             },
             {
                 img: landSub4Masonry,
                 link: "gardenOfStones",
-                title: 'LAND\n' +
-                    'CHAPTER IV\n' +
-                    '\n' +
-                    'GARDEN OF STONE'
             },
         ]
     },
@@ -481,32 +463,18 @@ const dataportfolio = [
             {
                 img: breadMasonry,
                 link: "bread",
-                title: "Bread",
-                year: '2022-ongoing'
             },
             {
                 img: breadSub1Masonry,
                 link: "breadPath",
-                title: 'Bread\n' +
-                    'Chapter I\n' +
-                    '\n' +
-                    'THE PATH OF BREAD'
             },
             {
                 img: breadSub2Masonry,
                 link: "breadToys",
-                title: 'Bread\n' +
-                    'Chapter II\n' +
-                    '\n' +
-                    'TOYS '
             },
             {
                 img: breadSub3Masonry,
                 link: "breadHarvestSongs",
-                title: 'Bread\n' +
-                    'Chapter III\n' +
-                    '\n' +
-                    'HARVEST SONG '
             },
         ]
     },
@@ -522,8 +490,6 @@ const dataportfolio = [
             {
                 img: templeMasonry,
                 link: "temple",
-                title: 'TEMPLE',
-                year: '2023-ongoing'
             },
             // {
             //     img: shrineMasonry,
@@ -534,39 +500,26 @@ const dataportfolio = [
             {
                 img: bodyInTheTempleMasonry,
                 link: 'bodyInTheTemple',
-                title: 'BODY IN THE TEMPLE',
-                year: '2023-ongoing'
             },
             {
                 img: honorsMasonry,
                 link: 'honors',
-                title: 'HONORS project',
-                year: '2022'
             },
             {
                 img: solarSystemMasonry,
                 link: 'solarSystem',
-                title: 'SIMILAR EXPOSURE\n' +
-                    'I SOLAR SYSTEM',
-                year: '2022'
             },
             {
                 img: consecrationMasonry,
                 link: 'consecration',
-                title: 'CONSECRATION',
-                year: '2022-ongoing'
             },
             {
                 img: invasionMasonry,
                 link: 'invasion',
-                title: 'INVASION',
-                year: '2022'
             },
             {
                 img: iconostasMasonry,
                 link: 'iconostas',
-                title: 'ICONOSTAS vol. 2.0',
-                year: '2021-ongoing'
             }
         ]
     }
