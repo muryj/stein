@@ -2,11 +2,6 @@
 import related1 from './assets/relatedProjects/related1.jpeg'
 import related2 from './assets/relatedProjects/related2.jpeg'
 import related3 from './assets/relatedProjects/related3.jpeg'
-//socialIcons
-import podcasts from './assets/socialIcons/podcasts.jpeg'
-import instagram from './assets/socialIcons/instagram.jpeg'
-import telegram from './assets/socialIcons/telegram.jpeg'
-
 //PROJECTS
 //utopia
 import utopiaMasonry from './assets/projects/utopia/utopia-masonry.jpeg';
@@ -413,21 +408,18 @@ const relatedProjects = {
         text: '«thesteinstudio» is an artist-run space based in the centre of Kyiv that has existed since 2020 with the idea of forming a community, creating an independent safe space for chamber expressions, as well as popularising and developing the culture of collecting in Ukraine.\n' +
             'The project organises exhibitions, residencies, training, artist talks and much more.',
         link: 'https://instagram.com/thesteinstudio?igshid=MWZjMTM2ODFkZg==',
-        defaultMedia: instagram
     },
     section2: {
         img: related2,
         title: '«Hi it’s me Stein»',
         text: '«Hi it’s me Stein» - is the most popular Ukrainian podcast about contemporary art and the art market. Many key Ukrainian gallerists, curators and artists have been guests on this podcast.',
         link: 'https://podcasts.apple.com/ua/podcast/hi-its-me-stein/id1647556555',
-        defaultMedia: podcasts
     },
     section3: {
         img: related3,
         title: "«Stein-tg channel»",
         text: '«Stein-tg channel» - An information channel that collects key articles, podcasts, statements and other newsworthy events relevant to the Ukrainian art space.',
         link: 'https://t.me/asteinart',
-        defaultMedia: telegram
     }
 }
 
@@ -1052,7 +1044,12 @@ const projects = {
                     {
                         img: bodyInTheTemple2,
                         title: 'Body2'
-                    },
+                    }
+                ]
+            },
+            {
+                type: 'gallery',
+                images: [
                     {
                         img: bodyInTheTemple3,
                         title: 'Body3'

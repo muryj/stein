@@ -1,11 +1,10 @@
 import React from "react";
 import "./styles.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import {Container, Row, Col} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import {
     relatedProjects,
 } from "../../content_option";
-import { ReactTinyLink } from 'react-tiny-link'
 
 export const RelatedProjects = () => {
     return (
@@ -23,17 +22,11 @@ export const RelatedProjects = () => {
                     <div className="text-content">
                         <h4>{relatedProjects.section1.title}</h4>
                         <p>{relatedProjects.section1.text}</p>
-                        <ReactTinyLink
-                            cardSize="small"
-                            width="100vw"
-                            showGraphic={true}
-                            maxLine={2}
-                            minLine={1}
-                            header={relatedProjects.section1.title}
-                            url={relatedProjects.section1.link}
-                            description={'Link to instagram'}
-                            defaultMedia={relatedProjects.section1.defaultMedia}
-                        />
+                        <button className="btn ac_btn" type="button" onClick={()=>{
+                            window.open(relatedProjects.section1.link)
+                        }}>
+                            Link
+                        </button>
                     </div>
                 </div>
                 <div className="sec_sp">
@@ -43,19 +36,11 @@ export const RelatedProjects = () => {
                     <div className="text-content">
                         <h4>{relatedProjects.section2.title}</h4>
                         <p>{relatedProjects.section2.text}</p>
-                        <div className="tiny-link-container">
-                            <ReactTinyLink
-                                cardSize="small"
-                                width="100vw"
-                                showGraphic={true}
-                                maxLine={2}
-                                minLine={1}
-                                header={relatedProjects.section2.title}
-                                url={relatedProjects.section2.link}
-                                description={'Link to podcast'}
-                                defaultMedia={relatedProjects.section2.defaultMedia}
-                            />
-                        </div>
+                                <button className="btn ac_btn" type="button" onClick={()=>{
+                                    window.open(relatedProjects.section2.link)
+                                }}>
+                                  Link
+                                </button>
                     </div>
                 </div>
                 <div className="sec_sp">
@@ -65,17 +50,11 @@ export const RelatedProjects = () => {
                     <div className="text-content">
                         <h4>{relatedProjects.section3.title}</h4>
                         <p>{relatedProjects.section3.text}</p>
-                        <ReactTinyLink
-                            cardSize="small"
-                            width="100vw"
-                            showGraphic={true}
-                            maxLine={2}
-                            minLine={1}
-                            header={relatedProjects.section3.title}
-                            url={relatedProjects.section3.link}
-                            description={'Link to telegram'}
-                            defaultMedia={relatedProjects.section3.defaultMedia}
-                        />
+                        <button className="btn ac_btn" type="button" onClick={()=>{
+                            window.open(relatedProjects.section2.link)
+                        }}>
+                            Link
+                        </button>
                     </div>
                 </div>
             </Container>

@@ -1,17 +1,23 @@
 // ProjectPage.js
 
-import React from "react";
+import React, {useEffect} from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import {Container, Row, Col} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import {meta} from "../../content_option";
 import {useParams} from 'react-router-dom';
 import {projects} from "../../content_option";
+// import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor'
+
 
 export const ProjectPage = () => {
     const {projectId, subProjectId} = useParams();
-
-    console.log(projectId, subProjectId)
+    //
+    // useEffect(()=>{
+    //     if(projectId !== 'solo'){
+    //         goToAnchor(subProjectId)
+    //     }
+    // },[])
 
     const project = projectId === 'solo' ? projects[subProjectId] :  projects[projectId];
 

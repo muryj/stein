@@ -16,6 +16,7 @@
     padding-right: 50px;
 }
 .text-content {
+    text-align: left;
     flex: 0.4
 }
 .tiny-link-container {
