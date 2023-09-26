@@ -25,7 +25,7 @@ export const Portfolio = () => {
                                         <img src={project.img} alt=""/>
                                         <div className="content">
                                             <Link
-                                                to={data.isGroupProject ? `/project/${data.groupLink}/${project.projectLink}` : `/project/solo/${project.link}`}>
+                                                to={data.isGroupProject ? `/project/${data.link}`: `/project/${project.link}`}>
                                                 View Project
                                             </Link>
                                         </div>

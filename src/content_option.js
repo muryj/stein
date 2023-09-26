@@ -426,51 +426,42 @@ const relatedProjects = {
 const dataportfolio = [
     {
         groupName: 'LAND',
-        groupLink: 'land',
+        link: 'land',
         isGroupProject: true,
         projects: [
             {
                 img: landMasonry,
-                projectLink: "land",
             },
             {
                 img: landSub1Masonry,
-                projectLink: "birth",
             },
             {
                 img: landSub2Masonry,
-                projectLink: "values",
             },
             {
                 img: landSub3Masonry,
-                projectLink: 'miscarriageShield',
             },
             {
                 img: landSub4Masonry,
-                projectLink: "gardenOfStones",
             },
         ],
     },
     {
         groupName: 'BREAD',
-        groupLink: 'bread',
+        link: 'bread',
         isGroupProject: true,
         projects: [
             {
                 img: breadMasonry,
-                projectLink: "bread",
             },
             {
                 img: breadSub1Masonry,
-                projectLink: "breadPath",
             },
             {
                 img: breadSub2Masonry,
-                projectLink: "breadToys",
             },
             {
                 img: breadSub3Masonry,
-                projectLink: "breadHarvestSongs",
             },
         ]
     },
@@ -525,8 +516,10 @@ const projects = {
     land: {
         metaTitle: 'LAND',
         metaDescription: 'Project, installation',
-        list:  ['land', 'birth', 'values', 'miscarriageShield', 'gardenOfStones'],
-        land: {
+        isGroupProject: true,
+        projects: [
+         {
+            anchor: 'land',
             main: {
                 title: 'LAND',
                 years: '2022 - ongoing',
@@ -541,7 +534,8 @@ const projects = {
                 },
             ]
         },
-        birth: {
+       {
+            anchor: 'birth',
             main: {
                 title: 'LAND Chapter I: BIRTH',
                 years: '2022 - ongoing',
@@ -573,7 +567,8 @@ const projects = {
                 },
             ]
         },
-        values: {
+        {
+            anchor: 'values',
             main: {
                 title: 'LAND Chapter II: VALUES',
                 years: '2023',
@@ -600,7 +595,8 @@ const projects = {
                 },
             ]
         },
-        miscarriageShield: {
+         {
+             anchor: 'miscarriageShield',
             main: {
                 title: 'LAND Chapter III: MISCARRIAGE SHIELD',
                 years: '2023',
@@ -637,7 +633,8 @@ const projects = {
                 },
             ]
         },
-        gardenOfStones: {
+         {
+             anchor: 'gardenOfStones',
             main: {
                 title: 'LAND Chapter IV: GARDEN OF STONE',
                 years: '2023',
@@ -667,14 +664,17 @@ const projects = {
                 },
             ]
         },
+    ]
     },
     bread: {
         metaTitle: 'Bread',
+        isGroupProject: true,
         metaDescription: 'Project, installation',
-        list: ['bread', 'breadPath', 'breadToys', 'breadHarvestSongs'],
-        bread: {
+        projects: [
+            {
             main: {
                 title: 'Bread',
+                anchor: 'bread',
                 years: '2022 - ongoing',
                 desc: 'Project, installation',
                 img: bread1
@@ -690,9 +690,10 @@ const projects = {
                 }
             ]
         },
-        breadPath: {
+        {
             main: {
                 title: 'Bread Chapter I: The Path Of Bread',
+                anchor: 'breadPath',
                 years: '2022 - ongoing',
                 desc: 'Project, installation',
                 img: breadPath1
@@ -735,9 +736,10 @@ const projects = {
                 },
             ]
         },
-        breadToys: {
+         {
             main: {
                 title: 'Bread Chapter II: Toys',
+                anchor: 'breadToys',
                 years: '2022 - ongoing',
                 desc: 'Project, installation',
                 img: breadToys1
@@ -792,9 +794,10 @@ const projects = {
             ]
 
         },
-        breadHarvestSongs: {
+         {
             main: {
                 title: 'Bread Chapter III: Harvest Song',
+                anchor: 'breadHarvestSongs',
                 years: '2022 - ongoing',
                 desc: 'Project, installation',
                 img: breadHarvest1
@@ -822,7 +825,7 @@ const projects = {
                 }
             ]
         },
-    },
+    ]},
     utopia: {
         main: {
             title: 'Utopia',

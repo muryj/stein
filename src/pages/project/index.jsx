@@ -1,25 +1,18 @@
 // ProjectPage.js
 
-import React, {useEffect} from "react";
+import React from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import {Container} from "react-bootstrap";
 import {meta} from "../../content_option";
 import {useParams} from 'react-router-dom';
 import {projects} from "../../content_option";
-// import ScrollableAnchor, { goToAnchor } from 'react-scrollable-anchor'
 
 
 export const ProjectPage = () => {
-    const {projectId, subProjectId} = useParams();
-    //
-    // useEffect(()=>{
-    //     if(projectId !== 'solo'){
-    //         goToAnchor(subProjectId)
-    //     }
-    // },[])
-
-    const project = projectId === 'solo' ? projects[subProjectId] :  projects[projectId];
+    const {projectId} = useParams();
+    console.log(projectId)
+    const project = projects[projectId];
 
     if (!project) {
         return <div>Project not found</div>;
@@ -27,7 +20,6 @@ export const ProjectPage = () => {
 
     const renderMain = (project) => {
         const {img, title, years, desc} = project.main;
-
         return (
             <div className={'main'}>
                 <div className="main-image">
@@ -123,12 +115,11 @@ export const ProjectPage = () => {
                     <meta name="description" content={project.metaTitle}/>
                 </Helmet>
                 {
-                    project.list.map((item, index)=>{
-                        console.log(item)
+                    project.projects.map((item, index)=>{
                         return (
-                            <div key={`${project[item].title}${index}`}>
-                                {renderMain(project[item])}
-                                {renderArt(project[item])}
+                            <div key={`${item.title}${index}`}>
+                                {renderMain(item)}
+                                {renderArt(item)}
                             </div>
                         )
                     })
@@ -136,9 +127,10 @@ export const ProjectPage = () => {
             </Container>
         )
     }
+
     return (
         <HelmetProvider>
-            {projectId === 'solo' ? renderSoloProject() : renderGroupProject()}
+            {project.isGroupProject  ?  renderGroupProject() : renderSoloProject()}
         </HelmetProvider>
     );
 };
