@@ -9,14 +9,17 @@ import {useParams} from 'react-router-dom';
 import {projects} from "../../content_option";
 
 export const ProjectPage = () => {
-    const {id} = useParams();
-    const project = projects[id];
+    const {projectId, subProjectId} = useParams();
+
+    console.log(projectId, subProjectId)
+
+    const project = projectId === 'solo' ? projects[subProjectId] :  projects[projectId];
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
-    const renderMain = () => {
+    const renderMain = (project) => {
         const {img, title, years, desc} = project.main;
 
         return (
@@ -35,7 +38,7 @@ export const ProjectPage = () => {
         );
     };
 
-    const renderArt = () => {
+    const renderArt = (project) => {
         return project.art.map((item, index) => {
             switch (item.type) {
                 case 'singleImage':
@@ -76,10 +79,10 @@ export const ProjectPage = () => {
                             {item.img && <div className="text-image-wrapper">
                                 <img src={item.img} alt={`Art ${index} Image`}/>
                             </div>}
-                            <div className={"text-content-wrapper"}  style={!item.img ? { flex:1} : {}}>
-                            <div className="text-content">
-                                <p>{item.text}</p>
-                            </div>
+                            <div className={"text-content-wrapper"} style={!item.img ? {flex: 1} : {}}>
+                                <div className="text-content">
+                                    <p>{item.text}</p>
+                                </div>
                             </div>
                         </div>
                     )
@@ -90,19 +93,46 @@ export const ProjectPage = () => {
         });
     };
 
-    return (
-        <HelmetProvider>
+    const renderSoloProject = () => {
+        return (
             <Container className="About-header">
                 <Helmet>
                     <meta charSet="utf-8"/>
                     <title>{project.main.title}</title>
                     <meta name="description" content={project.main.desc}/>
                 </Helmet>
-                <Row className="mb-5 mt-3">
-                </Row>
-                {renderMain()}
-                {renderArt()}
+                {renderMain(project)}
+                {renderArt(project)}
+
             </Container>
+        )
+    }
+
+    const renderGroupProject = () => {
+        return (
+            <Container className="About-header">
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title>{project.metaDescription}</title>
+                    <meta name="description" content={project.metaTitle}/>
+                </Helmet>
+                {
+                    project.list.map((item, index)=>{
+                        console.log(item)
+                        return (
+                            <div key={`${project[item].title}${index}`}>
+                                {renderMain(project[item])}
+                                {renderArt(project[item])}
+                            </div>
+                        )
+                    })
+                }
+            </Container>
+        )
+    }
+    return (
+        <HelmetProvider>
+            {projectId === 'solo' ? renderSoloProject() : renderGroupProject()}
         </HelmetProvider>
     );
 };

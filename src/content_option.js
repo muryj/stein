@@ -434,47 +434,51 @@ const relatedProjects = {
 const dataportfolio = [
     {
         groupName: 'LAND',
+        groupLink: 'land',
+        isGroupProject: true,
         projects: [
             {
                 img: landMasonry,
-                link: "land",
+                projectLink: "land",
             },
             {
                 img: landSub1Masonry,
-                link: "birth",
+                projectLink: "birth",
             },
             {
                 img: landSub2Masonry,
-                link: "values",
+                projectLink: "values",
             },
             {
                 img: landSub3Masonry,
-                link: 'miscarriageShield',
+                projectLink: 'miscarriageShield',
             },
             {
                 img: landSub4Masonry,
-                link: "gardenOfStones",
+                projectLink: "gardenOfStones",
             },
-        ]
+        ],
     },
     {
         groupName: 'BREAD',
+        groupLink: 'bread',
+        isGroupProject: true,
         projects: [
             {
                 img: breadMasonry,
-                link: "bread",
+                projectLink: "bread",
             },
             {
                 img: breadSub1Masonry,
-                link: "breadPath",
+                projectLink: "breadPath",
             },
             {
                 img: breadSub2Masonry,
-                link: "breadToys",
+                projectLink: "breadToys",
             },
             {
                 img: breadSub3Masonry,
-                link: "breadHarvestSongs",
+                projectLink: "breadHarvestSongs",
             },
         ]
     },
@@ -524,7 +528,309 @@ const dataportfolio = [
         ]
     }
 ];
+
 const projects = {
+    land: {
+        metaTitle: 'LAND',
+        metaDescription: 'Project, installation',
+        list:  ['land', 'birth', 'values', 'miscarriageShield', 'gardenOfStones'],
+        land: {
+            main: {
+                title: 'LAND',
+                years: '2022 - ongoing',
+                desc: 'Project, installation',
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: 'The LAND project is planned as a narrative built around the life cycle of the human body, which is biologically closely connected to the idea of land.\n' +
+                        'First, the human body is born and nourished by the fruits of the land, then it works with it, protects it. Then a body dies and becomes part of the soil and landscape.\n' +
+                        'I record the changes, disruptions and distortions in this circle that occurred due to the war.\n',
+                },
+            ]
+        },
+        birth: {
+            main: {
+                title: 'LAND Chapter I: BIRTH',
+                years: '2022 - ongoing',
+                desc: 'ceramics, installation, painting',
+                img: landBirth1,
+            },
+            art: [
+                {
+                    type: 'gallery',
+                    images: [
+                        {
+                            img: landBirth2,
+                        },
+                        {
+                            img: landBirth3,
+                        },
+                        {
+                            img: landBirth4
+                        }
+                    ]
+                },
+                {
+                    type: 'singleImage',
+                    img: landBirth5,
+                    title: 'STILLBORN',
+                    year: '2022',
+                    desc: 'Tempera and oil on canvas\n' +
+                        '130х100'
+                },
+            ]
+        },
+        values: {
+            main: {
+                title: 'LAND Chapter II: VALUES',
+                years: '2023',
+                desc: 'Clay, soil, metal, glass, metal\n' +
+                    '10х8х5',
+                img: landValues1,
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: '  The vision for this chapter of project appeared during the Armed Forces of Ukraine launched a counteroffensive to de-occupy part of Ukrainian territories and the liberation of Kharkiv region in the autumn of 2022, which resulted in many great losses. \n' +
+                        '\n' +
+                        '  This led me to have an internal dialogue regarding the clashes of moral and religious norms, individual evidence and supremacy, as well as the position of being a citizen and a Christian. I focused on observing the dynamics of values, new humanism, and how humanity perceives the colonial idea of a world where resources are valued more than human life. \n' +
+                        '\n' +
+                        '   I used a clay, which has been a long-standing material for folk art. And combined that soft and rural material with dirty brazed fittings, which are most often used in the military industry. The most important part of the project is the input of real soil to the \'womb\' of art pieces, which are brought by soldiers and volunteers from the de-occupied territories of Ukraine. \n',
+                    img: landValues2
+                },
+                {
+                    type: 'singleImage',
+                    img: landValues3,
+                    year: '2023',
+                    desc: 'Soil, clay, glass, metal \n' +
+                        '45х12x10'
+                },
+            ]
+        },
+        miscarriageShield: {
+            main: {
+                title: 'LAND Chapter III: MISCARRIAGE SHIELD',
+                years: '2023',
+                desc: 'Photo and video documentation\n' +
+                    'Object of clay, soil and metal',
+                img: landShield1,
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: 'I created a metal and clay corset I put on my body on camera. In the middle of the video documentation it becomes obvious that the new body is the body of a pregnant woman. It is at this point that I start filling the inside of my abdomen and chest with earth. All the earth used in the project was brought from the de-occupied territory of Ukraine. \n' +
+                        '\n' +
+                        '  SHIELD is the centerpiece of my project, which consists of video, photography and sculpture. My goal was to show an allusion to the bodies of all those who defend Ukraine. Through this work, I explore the encapsulation of grief, the functional use of the human body, the substitution of values, and the horror of war.\n',
+                    img: landShield2
+                },
+                {
+                    type: 'text',
+                    text: 'Throughout the process, the corset deforms, hurts my body, becomes heavier because of the added earth, lives a long life as a real human body, and eventually collapses. \n' +
+                        '\n' +
+                        '\n' +
+                        'I documented each stage and ended the work with a photograph of a torn corset separated from my body. It is an allusion to the state of connection between a mother, her body and her stillborn child.\n',
+                    img: landShield3
+                },
+                {
+                    type: 'gallery',
+                    images: [
+                        {
+                            img: landShield4,
+                        },
+                        {
+                            img: landShield5,
+                        },
+                    ]
+                },
+            ]
+        },
+        gardenOfStones: {
+            main: {
+                title: 'LAND Chapter IV: GARDEN OF STONE',
+                years: '2023',
+                desc: 'Ceramic, soil, photography',
+                img: landStone1,
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: 'The last part of the LAND project returns a person  into the land where each becomes a part of it.\n' +
+                        '    A big issue during military operations is depersonalized casualty statistics. Dead people become countless numbers, stones in the landscape. At the same time, there is an alleged natural cycle of recycling. Man becomes good for the earth, food is born from the earth, which gives the possibility of a new life.\n',
+                    img: landStone2
+                },
+                {
+                    type: 'gallery',
+                    images: [
+                        {
+                            img: landStone3,
+                        },
+                        {
+                            img: landStone4,
+                        },
+                        {
+                            img: landStone5,
+                        },
+                    ]
+                },
+            ]
+        },
+    },
+    bread: {
+        metaTitle: 'Bread',
+        metaDescription: 'Project, installation',
+        list: ['bread', 'breadPath', 'breadToys', 'breadHarvestSongs'],
+        bread: {
+            main: {
+                title: 'Bread',
+                years: '2022 - ongoing',
+                desc: 'Project, installation',
+                img: bread1
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: 'This research project explores the complex relationship between food security, historical trauma, and cultural memory in Ukraine. It aims to understand the implications of food accessibility and the effects of genocide on Ukrainian culture and genetics, drawing inspiration from Ukraine\'s historical significance as the breadbasket of Europe and recent invasions that highlighted its agricultural resources.\n' +
+                        '\n' +
+                        'The project delves into the Holodomor, a tragic Ukrainian famine marked by attempted extermination and Stalin\'s colonization policies. It examines how the manipulation of food supply can lead to political starvation and control over populations.\n' +
+                        '\n' +
+                        'Using diverse artistic mediums, the project visually depicts the evolution of grain exports and the challenges posed by the war.\n',
+                }
+            ]
+        },
+        breadPath: {
+            main: {
+                title: 'Bread Chapter I: The Path Of Bread',
+                years: '2022 - ongoing',
+                desc: 'Project, installation',
+                img: breadPath1
+            },
+            art: [
+                {
+                    type: 'text',
+                    text: 'In this part of the project, I created a canvas, a sculpture and a video of the performance. Reflecting and exploring what the ways of exporting grain from Ukraine to the world looked like, and especially now that people are forced to harvest some grain right in the middle of burning fields due to the full-scale invasion, I created a canvas completely filled with coal with a narrow white stripe. During my performance, I first methodically filled the entire canvas with charcoal and then used bread as an eraser. In this way, I was rethinking the role and application of bread. After I used the bread as an eraser, I collected all the leftover bread in a glass box and securely fixed it. This sculpture made of a glass box and bread represents the illusion of availability. In fact, there is enough food in the world for hunger to never exist again, but as soon as bread (food) is misused for other purposes, such as influence, genocide, politics, we have an artificially created famine.',
+                },
+                {
+                    type: 'singleImage',
+                    img: breadPath2,
+                    title: 'Pave the road',
+                    year: '2023',
+                    desc: 'Performance - where I use bread to wipe the drawing. \n ' +
+                        'Video and foto documentary.'
+                },
+                {
+                    type: 'text',
+                    text: 'A special experience of Ukrainians (and me as an artist) is the law that my grandmother told me about. Its name is the Law of 5 Ears of Grain.\n' +
+                        'The infamous law "about five ears of grain" became a harbinger of the Holodomor. It provided for the theft of collective farm property (and even a few ears of grain that had overwintered under the snow in the field were considered as such), and for the execution on the spot and confiscation of property. In the presence of mitigating circumstances, the punishment was 10 years in camps. Amnesty was prohibited. And this is despite the fact that under the legislation of the time, even premeditated murder was punishable by up to 10 years in prison. And theft of other people\'s property was punishable by up to three months of forced labour.\n' +
+                        '\n' +
+                        'The Five Ears of Grain Law had no precedent in world history. Under the circumstances, it effectively prohibited people from disposing of their food. Ukrainians found themselves in a deadly trap: fantastic plans for grain distribution (or, more simply, plans for grain confiscation) condemned peasants to starvation. Any attempts to escape and hide food threatened with confiscation of all edible items (for failure to comply with the grain delivery) or execution.\n' +
+                        '\n' +
+                        'Thus, people who collected grain, saw it, touched it, and had access to food could not get it and died of starvation.\n',
+                },
+                {
+                    type: 'singleImage',
+                    img: breadPath3,
+                    title: 'Road',
+                    year: '2023',
+                    desc: 'coal, canvas 80x180 cm'
+                },
+                {
+                    type: 'singleImage',
+                    img: breadPath4,
+                    title: 'Affordable bread',
+                    year: '2023',
+                    desc: 'sculpture: glass box, bread, 77x36x36 cm'
+                },
+            ]
+        },
+        breadToys: {
+            main: {
+                title: 'Bread Chapter II: Toys',
+                years: '2022 - ongoing',
+                desc: 'Project, installation',
+                img: breadToys1
+            },
+            art: [
+                {
+                    type: 'text',
+                    img: breadToys2,
+                    text: 'This particular series, Toys, emerged as a result of a visual exploration of the manifestations of historical traumas of the twentieth century and the retraumatisation caused by a full-scale invasion through sculptural practice.\n' +
+                        'Traumatic events cause complex experiences and leave their mark - often for life. Unexamined, repressed experiences can be deeply buried, seem long forgotten, and often return at unexpected times.\n' +
+                        'The main reason for such a repeated return to a traumatic state is usually retraumatisation. It can be an event that takes us back in time.\n' +
+                        'In my childhood, I heard a lot of stories from my grandmother about her experience of the Holodomor. I felt certain patterns of upbringing that were conditioned by this experience. My long work with a therapist as an adult largely touched upon the fear and shame of throwing away food, unhealthy relationships with food, and other manifestations of irrational feelings towards a resource I had in abundance. I characterise this as a manifestation of post-memory.\n' +
+                        'Coincidentally, I experienced a full-scale invasion in my parents\' home. My father\'s fear of starvation for his family was so great that it began to manifest itself neurotically with irrational prohibitions to touch food, eat certain categories of food stocks, orders to eat only at certain hours, etc. \n',
+                },
+                {
+                    type: 'text',
+                    img: breadToys3,
+                    text: 'Unfortunately, at a certain point, the level of tension increased so much that it became one of the reasons why I was forced to leave my parents\' house for Lviv.\n' +
+                        'While in Lviv, I saw for the first time toys made of cheese, cheese horses - a traditional Carpathian dish, decoration, souvenir and ornament. I was struck by this different tradition and legitimacy of playing with food. To somehow illustrate, understand and live my feelings, I decided to create sculptures using bread as the main material.\n',
+                },
+                {
+                    type: 'singleImage',
+                    img: breadToys4,
+                    title: 'Landscapeand',
+                    year: '2023',
+                    desc: 'bread, metal 77cm \n' +
+                        'Figure: 15x17\n'
+                },
+                {
+                    type: 'singleImage',
+                    img: breadToys5,
+                    title: 'Seraphim',
+                    year: '2023',
+                    desc: 'bread, metal 77cm \n' +
+                        'Figure: 15x17\n'
+                },
+                {
+                    type: 'singleImage',
+                    img: breadToys6,
+                    title: 'Lion and Tree',
+                    year: '2023',
+                    desc: 'bread, metal 77cm figure: 15x17 , 18x10'
+                },
+                {
+                    type: 'singleImage',
+                    img: breadToys7,
+                    title: 'Bird III',
+                    year: '2023',
+                    desc: 'bread, metal  77cmx\n' +
+                        'Figure 17x16\n'
+                },
+            ]
+
+        },
+        breadHarvestSongs: {
+            main: {
+                title: 'Bread Chapter III: Harvest Song',
+                years: '2022 - ongoing',
+                desc: 'Project, installation',
+                img: breadHarvest1
+            },
+            art: [
+                {
+                    type: 'text',
+                    img: breadHarvest2,
+                    text: 'Thinking about the forms of memory, about how people remember something, I realised that many traumatic events do not leave behind artefacts or physical manifestations, but leave a huge mark on the subconscious, behaviour, culture, and body.\n' +
+                        'An important part of my work on these paintings was immersion in the study of epigenetics. Epigenetics is the study of heritable changes in phenotype or gene expression that are caused by mechanisms other than changes in the sequence of DNA nucleotides. Such changes can remain visible for several cell generations or even several generations of living organisms.\n' +
+                        'I focused on the memory of the great hunger that remained in the subconscious and in the body at the level of genes. For me, the redundancy of the body, which seems to be trying to build an additional space between the soul and the outside world, looks like a kind of defence programme. These programmes are repeated and highlighted in times of crisis - so after the full-scale invasion, this was the first thing I noticed even in my family, an unreasonable fear that food would run out and there would not be enough.\n',
+                },
+                {
+                    type: 'text',
+                    img: breadHarvest3,
+                    text: 'It is especially interesting that such a huge fear and memory of hunger is present in a region that is considered the breadbasket of the world, in a region that is famous for grain exports. In Ukraine, a huge part of the cultural heritage is associated with agriculture, with the production of bread, with the process of harvesting. There are many paintings in 20th-century Ukrainian painting depicting everyday scenes of harvesting or resting afterwards. The paintings always depict the classic golden fields of Ukraine. People are an integral part of this process, just as they are an integral part of the landscape.  I hadn\'t paid that much attention to it before, but after the full-scale invasion, the question of how a person practically, their body directly becomes part of the poisoned landscape really came to light. Thinking about this, I created paintings where people are in classic post-harvest resting poses, like from classic 20th century paintings, as if lying on wheat fields, but now the person just merges with the background. This raises the question of what is the main thing in the composition, the person or the background, the person or the landscape, at the same time as the question of what is the main thing, human life or the bread that a person grows.',
+                },
+                {
+                    type: 'singleImage',
+                    img: breadHarvest4,
+                    title: 'After harvesting ІІІ',
+                    year: '2023',
+                    desc: 'Oil on canvas, coal\n' +
+                        '135х159\n'
+                }
+            ]
+        },
+    },
     utopia: {
         main: {
             title: 'Utopia',
@@ -609,156 +915,6 @@ const projects = {
                         img: utopia11,
                     }
                 ]
-            }
-        ]
-    },
-    bread: {
-        main: {
-            title: 'Bread',
-            years: '2022 - ongoing',
-            desc: 'Project, installation',
-            img: bread1
-        },
-        art: [
-            {
-                type: 'text',
-                text: 'This research project explores the complex relationship between food security, historical trauma, and cultural memory in Ukraine. It aims to understand the implications of food accessibility and the effects of genocide on Ukrainian culture and genetics, drawing inspiration from Ukraine\'s historical significance as the breadbasket of Europe and recent invasions that highlighted its agricultural resources.\n' +
-                    '\n' +
-                    'The project delves into the Holodomor, a tragic Ukrainian famine marked by attempted extermination and Stalin\'s colonization policies. It examines how the manipulation of food supply can lead to political starvation and control over populations.\n' +
-                    '\n' +
-                    'Using diverse artistic mediums, the project visually depicts the evolution of grain exports and the challenges posed by the war.\n',
-            }
-        ]
-    },
-    breadPath: {
-        main: {
-            title: 'Bread Chapter I: The Path Of Bread',
-            years: '2022 - ongoing',
-            desc: 'Project, installation',
-            img: breadPath1
-        },
-        art: [
-            {
-                type: 'text',
-                text: 'In this part of the project, I created a canvas, a sculpture and a video of the performance. Reflecting and exploring what the ways of exporting grain from Ukraine to the world looked like, and especially now that people are forced to harvest some grain right in the middle of burning fields due to the full-scale invasion, I created a canvas completely filled with coal with a narrow white stripe. During my performance, I first methodically filled the entire canvas with charcoal and then used bread as an eraser. In this way, I was rethinking the role and application of bread. After I used the bread as an eraser, I collected all the leftover bread in a glass box and securely fixed it. This sculpture made of a glass box and bread represents the illusion of availability. In fact, there is enough food in the world for hunger to never exist again, but as soon as bread (food) is misused for other purposes, such as influence, genocide, politics, we have an artificially created famine.',
-            },
-            {
-                type: 'singleImage',
-                img: breadPath2,
-                title: 'Pave the road',
-                year: '2023',
-                desc: 'Performance - where I use bread to wipe the drawing. \n ' +
-                    'Video and foto documentary.'
-            },
-            {
-                type: 'text',
-                text: 'A special experience of Ukrainians (and me as an artist) is the law that my grandmother told me about. Its name is the Law of 5 Ears of Grain.\n' +
-                    'The infamous law "about five ears of grain" became a harbinger of the Holodomor. It provided for the theft of collective farm property (and even a few ears of grain that had overwintered under the snow in the field were considered as such), and for the execution on the spot and confiscation of property. In the presence of mitigating circumstances, the punishment was 10 years in camps. Amnesty was prohibited. And this is despite the fact that under the legislation of the time, even premeditated murder was punishable by up to 10 years in prison. And theft of other people\'s property was punishable by up to three months of forced labour.\n' +
-                    '\n' +
-                    'The Five Ears of Grain Law had no precedent in world history. Under the circumstances, it effectively prohibited people from disposing of their food. Ukrainians found themselves in a deadly trap: fantastic plans for grain distribution (or, more simply, plans for grain confiscation) condemned peasants to starvation. Any attempts to escape and hide food threatened with confiscation of all edible items (for failure to comply with the grain delivery) or execution.\n' +
-                    '\n' +
-                    'Thus, people who collected grain, saw it, touched it, and had access to food could not get it and died of starvation.\n',
-            },
-            {
-                type: 'singleImage',
-                img: breadPath3,
-                title: 'Road',
-                year: '2023',
-                desc: 'coal, canvas 80x180 cm'
-            },
-            {
-                type: 'singleImage',
-                img: breadPath4,
-                title: 'Affordable bread',
-                year: '2023',
-                desc: 'sculpture: glass box, bread, 77x36x36 cm'
-            },
-        ]
-    },
-    breadToys: {
-        main: {
-            title: 'Bread Chapter II: Toys',
-            years: '2022 - ongoing',
-            desc: 'Project, installation',
-            img: breadToys1
-        },
-        art: [
-            {
-                type: 'text',
-                img: breadToys2,
-                text: 'This particular series, Toys, emerged as a result of a visual exploration of the manifestations of historical traumas of the twentieth century and the retraumatisation caused by a full-scale invasion through sculptural practice.\n' +
-                    'Traumatic events cause complex experiences and leave their mark - often for life. Unexamined, repressed experiences can be deeply buried, seem long forgotten, and often return at unexpected times.\n' +
-                    'The main reason for such a repeated return to a traumatic state is usually retraumatisation. It can be an event that takes us back in time.\n' +
-                    'In my childhood, I heard a lot of stories from my grandmother about her experience of the Holodomor. I felt certain patterns of upbringing that were conditioned by this experience. My long work with a therapist as an adult largely touched upon the fear and shame of throwing away food, unhealthy relationships with food, and other manifestations of irrational feelings towards a resource I had in abundance. I characterise this as a manifestation of post-memory.\n' +
-                    'Coincidentally, I experienced a full-scale invasion in my parents\' home. My father\'s fear of starvation for his family was so great that it began to manifest itself neurotically with irrational prohibitions to touch food, eat certain categories of food stocks, orders to eat only at certain hours, etc. \n',
-            },
-            {
-                type: 'text',
-                img: breadToys3,
-                text: 'Unfortunately, at a certain point, the level of tension increased so much that it became one of the reasons why I was forced to leave my parents\' house for Lviv.\n' +
-                    'While in Lviv, I saw for the first time toys made of cheese, cheese horses - a traditional Carpathian dish, decoration, souvenir and ornament. I was struck by this different tradition and legitimacy of playing with food. To somehow illustrate, understand and live my feelings, I decided to create sculptures using bread as the main material.\n',
-            },
-            {
-                type: 'singleImage',
-                img: breadToys4,
-                title: 'Landscapeand',
-                year: '2023',
-                desc: 'bread, metal 77cm \n' +
-                    'Figure: 15x17\n'
-            },
-            {
-                type: 'singleImage',
-                img: breadToys5,
-                title: 'Seraphim',
-                year: '2023',
-                desc: 'bread, metal 77cm \n' +
-                    'Figure: 15x17\n'
-            },
-            {
-                type: 'singleImage',
-                img: breadToys6,
-                title: 'Lion and Tree',
-                year: '2023',
-                desc: 'bread, metal 77cm figure: 15x17 , 18x10'
-            },
-            {
-                type: 'singleImage',
-                img: breadToys7,
-                title: 'Bird III',
-                year: '2023',
-                desc: 'bread, metal  77cmx\n' +
-                    'Figure 17x16\n'
-            },
-        ]
-
-    },
-    breadHarvestSongs: {
-        main: {
-            title: 'Bread Chapter III: Harvest Song',
-            years: '2022 - ongoing',
-            desc: 'Project, installation',
-            img: breadHarvest1
-        },
-        art: [
-            {
-                type: 'text',
-                img: breadHarvest2,
-                text: 'Thinking about the forms of memory, about how people remember something, I realised that many traumatic events do not leave behind artefacts or physical manifestations, but leave a huge mark on the subconscious, behaviour, culture, and body.\n' +
-                    'An important part of my work on these paintings was immersion in the study of epigenetics. Epigenetics is the study of heritable changes in phenotype or gene expression that are caused by mechanisms other than changes in the sequence of DNA nucleotides. Such changes can remain visible for several cell generations or even several generations of living organisms.\n' +
-                    'I focused on the memory of the great hunger that remained in the subconscious and in the body at the level of genes. For me, the redundancy of the body, which seems to be trying to build an additional space between the soul and the outside world, looks like a kind of defence programme. These programmes are repeated and highlighted in times of crisis - so after the full-scale invasion, this was the first thing I noticed even in my family, an unreasonable fear that food would run out and there would not be enough.\n',
-            },
-            {
-                type: 'text',
-                img: breadHarvest3,
-                text: 'It is especially interesting that such a huge fear and memory of hunger is present in a region that is considered the breadbasket of the world, in a region that is famous for grain exports. In Ukraine, a huge part of the cultural heritage is associated with agriculture, with the production of bread, with the process of harvesting. There are many paintings in 20th-century Ukrainian painting depicting everyday scenes of harvesting or resting afterwards. The paintings always depict the classic golden fields of Ukraine. People are an integral part of this process, just as they are an integral part of the landscape.  I hadn\'t paid that much attention to it before, but after the full-scale invasion, the question of how a person practically, their body directly becomes part of the poisoned landscape really came to light. Thinking about this, I created paintings where people are in classic post-harvest resting poses, like from classic 20th century paintings, as if lying on wheat fields, but now the person just merges with the background. This raises the question of what is the main thing in the composition, the person or the background, the person or the landscape, at the same time as the question of what is the main thing, human life or the bread that a person grows.',
-            },
-            {
-                type: 'singleImage',
-                img: breadHarvest4,
-                title: 'After harvesting ІІІ',
-                year: '2023',
-                desc: 'Oil on canvas, coal\n' +
-                    '135х159\n'
             }
         ]
     },
@@ -869,147 +1025,6 @@ const projects = {
                 year: '2023',
                 desc: 'Tempera and oil on canvas, coal\n' +
                     '90x90'
-            },
-        ]
-    },
-    land: {
-        main: {
-            title: 'LAND',
-            years: '2022 - ongoing',
-            desc: 'Project, installation',
-        },
-        art: [
-            {
-                type: 'text',
-                text: 'The LAND project is planned as a narrative built around the life cycle of the human body, which is biologically closely connected to the idea of land.\n' +
-                    'First, the human body is born and nourished by the fruits of the land, then it works with it, protects it. Then a body dies and becomes part of the soil and landscape.\n' +
-                    'I record the changes, disruptions and distortions in this circle that occurred due to the war.\n',
-            },
-        ]
-    },
-    birth: {
-        main: {
-            title: 'LAND Chapter I: BIRTH',
-            years: '2022 - ongoing',
-            desc: 'ceramics, installation, painting',
-            img: landBirth1,
-        },
-        art: [
-            {
-                type: 'gallery',
-                images: [
-                    {
-                        img: landBirth2,
-                    },
-                    {
-                        img: landBirth3,
-                    },
-                    {
-                        img: landBirth4
-                    }
-                ]
-            },
-            {
-                type: 'singleImage',
-                img: landBirth5,
-                title: 'STILLBORN',
-                year: '2022',
-                desc: 'Tempera and oil on canvas\n' +
-                    '130х100'
-            },
-        ]
-    },
-    values: {
-        main: {
-            title: 'LAND Chapter II: VALUES',
-            years: '2023',
-            desc: 'Clay, soil, metal, glass, metal\n' +
-                '10х8х5',
-            img: landValues1,
-        },
-        art: [
-            {
-                type: 'text',
-                text: '  The vision for this chapter of project appeared during the Armed Forces of Ukraine launched a counteroffensive to de-occupy part of Ukrainian territories and the liberation of Kharkiv region in the autumn of 2022, which resulted in many great losses. \n' +
-                    '\n' +
-                    '  This led me to have an internal dialogue regarding the clashes of moral and religious norms, individual evidence and supremacy, as well as the position of being a citizen and a Christian. I focused on observing the dynamics of values, new humanism, and how humanity perceives the colonial idea of a world where resources are valued more than human life. \n' +
-                    '\n' +
-                    '   I used a clay, which has been a long-standing material for folk art. And combined that soft and rural material with dirty brazed fittings, which are most often used in the military industry. The most important part of the project is the input of real soil to the \'womb\' of art pieces, which are brought by soldiers and volunteers from the de-occupied territories of Ukraine. \n',
-                img: landValues2
-            },
-            {
-                type: 'singleImage',
-                img: landValues3,
-                year: '2023',
-                desc: 'Soil, clay, glass, metal \n' +
-                    '45х12x10'
-            },
-        ]
-    },
-    miscarriageShield: {
-        main: {
-            title: 'LAND Chapter III: MISCARRIAGE SHIELD',
-            years: '2023',
-            desc: 'Photo and video documentation\n' +
-                'Object of clay, soil and metal',
-            img: landShield1,
-        },
-        art: [
-            {
-                type: 'text',
-                text: 'I created a metal and clay corset I put on my body on camera. In the middle of the video documentation it becomes obvious that the new body is the body of a pregnant woman. It is at this point that I start filling the inside of my abdomen and chest with earth. All the earth used in the project was brought from the de-occupied territory of Ukraine. \n' +
-                    '\n' +
-                    '  SHIELD is the centerpiece of my project, which consists of video, photography and sculpture. My goal was to show an allusion to the bodies of all those who defend Ukraine. Through this work, I explore the encapsulation of grief, the functional use of the human body, the substitution of values, and the horror of war.\n',
-                img: landShield2
-            },
-            {
-                type: 'text',
-                text: 'Throughout the process, the corset deforms, hurts my body, becomes heavier because of the added earth, lives a long life as a real human body, and eventually collapses. \n' +
-                    '\n' +
-                    '\n' +
-                    'I documented each stage and ended the work with a photograph of a torn corset separated from my body. It is an allusion to the state of connection between a mother, her body and her stillborn child.\n',
-                img: landShield3
-            },
-            {
-                type: 'gallery',
-                images: [
-                    {
-                        img: landShield4,
-                    },
-                    {
-                        img: landShield5,
-                    },
-                ]
-            },
-        ]
-    },
-    gardenOfStones: {
-        main: {
-            title: 'LAND Chapter IV: GARDEN OF STONE',
-            years: '2023',
-            desc: 'Ceramic, soil, photography',
-            img: landStone1,
-        },
-        art: [
-            {
-                type: 'text',
-                text: 'The last part of the LAND project returns a person  into the land where each becomes a part of it.\n' +
-                    '    A big issue during military operations is depersonalized casualty statistics. Dead people become countless numbers, stones in the landscape. At the same time, there is an alleged natural cycle of recycling. Man becomes good for the earth, food is born from the earth, which gives the possibility of a new life.\n',
-                img: landStone2
-            },
-            {
-                type: 'gallery',
-                images: [
-                    {
-                        img: landStone3,
-                    },
-                    {
-                        img: landStone4,
-                    },
-                    {
-                        img: landStone5,
-                    },
-                ]
             },
         ]
     },
