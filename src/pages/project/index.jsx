@@ -1,6 +1,6 @@
 // ProjectPage.js
 
-import React from "react";
+import React, {useCallback, useState} from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import {Container} from "react-bootstrap";
@@ -9,20 +9,33 @@ import {useParams} from 'react-router-dom';
 import {projects} from "../../content_option";
 
 
+
 export const ProjectPage = () => {
     const {projectId} = useParams();
-    console.log(projectId)
     const project = projects[projectId];
+
+    const [projectsRendered, setProjectsRendered] = useState(false)
+
+    const measuredRef = useCallback(node => {
+        console.log(node)
+        if (node !== null) {
+            setTimeout(()=>{
+                setProjectsRendered(true)
+            },700)
+        }
+    }, []);
+
 
     if (!project) {
         return <div>Project not found</div>;
     }
 
-    const renderMain = (project) => {
+
+    function renderMain (project) {
         const {img, title, years, desc} = project.main;
         return (
             <div className={'main'}>
-                <div className="main-image">
+                <div className="main-image" ref={measuredRef}>
                     {img && <img src={img} alt="Project Main"/>}
                 </div>
                 <div className="main-content">
@@ -36,7 +49,7 @@ export const ProjectPage = () => {
         );
     };
 
-    const renderArt = (project) => {
+    function renderArt (project) {
         return project.art.map((item, index) => {
             switch (item.type) {
                 case 'singleImage':
@@ -91,7 +104,7 @@ export const ProjectPage = () => {
         });
     };
 
-    const renderSoloProject = () => {
+    function renderSoloProject () {
         return (
             <Container className="About-header">
                 <Helmet>
@@ -106,7 +119,7 @@ export const ProjectPage = () => {
         )
     }
 
-    const renderGroupProject = () => {
+    function renderGroupProject () {
         return (
             <Container className="About-header">
                 <Helmet>
@@ -116,8 +129,9 @@ export const ProjectPage = () => {
                 </Helmet>
                 {
                     project.projects.map((item, index)=>{
+
                         return (
-                            <div key={`${item.title}${index}`}>
+                            <div key={`${item.title}${index}`} id={projectsRendered? item.anchor: ''}>
                                 {renderMain(item)}
                                 {renderArt(item)}
                             </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import {Container, Row, Col} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import {dataportfolio, meta} from "../../content_option";
 import {Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export const Portfolio = () => {
     return (
@@ -24,10 +25,21 @@ export const Portfolio = () => {
                                     <div key={index} className="po_item">
                                         <img src={project.img} alt=""/>
                                         <div className="content">
-                                            <Link
-                                                to={data.isGroupProject ? `/project/${data.link}`: `/project/${project.link}`}>
-                                                View Project
-                                            </Link>
+                                            {
+                                                data.isGroupProject ?
+                                                    (   <HashLink
+                                                        smooth={true}
+                                                        to={`/project/${data.link}/#${project.link}`}>
+                                                        View Project
+                                                    </HashLink>)
+                                                    :
+                                                    (
+                                                        <Link
+                                                            to={`/project/${project.link}`}>
+                                                            View Project
+                                                        </Link>
+                                                    )
+                                            }
                                         </div>
                                     </div>
                                 ))}
