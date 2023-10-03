@@ -1,12 +1,15 @@
 import React from "react";
 import "./style.css";
 import {
-  FaTwitter,
   FaFacebookF,
   FaLinkedin,
   FaYoutube,
   FaInstagram
 } from "react-icons/fa";
+import {
+    RiTwitterXFill
+} from "react-icons/ri"
+
 import { socialprofils } from "../../content_option";
 
 export const Socialicons = (params) => {
@@ -37,7 +40,7 @@ export const Socialicons = (params) => {
         {socialprofils.twitter && (
           <li>
             <a href={socialprofils.twitter}>
-              <FaTwitter />
+              <RiTwitterXFill />
             </a>
           </li>
         )}
@@ -49,7 +52,6 @@ export const Socialicons = (params) => {
           </li>
         )}
       </ul>
-      <p className="menu_footer">follow me</p>
     </div>
   );
 };

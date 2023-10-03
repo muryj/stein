@@ -21,7 +21,7 @@ export const ProjectPage = () => {
         if (node !== null) {
             setTimeout(()=>{
                 setProjectsRendered(true)
-            },700)
+            },1200)
         }
     }, []);
 

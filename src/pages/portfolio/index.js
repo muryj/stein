@@ -30,7 +30,7 @@ export const Portfolio = () => {
                                                     (   <HashLink
                                                         smooth={true}
                                                         to={`/project/${data.link}/#${project.link}`}>
-                                                        View Project
+                                                        {project.title}
                                                     </HashLink>)
                                                     :
                                                     (

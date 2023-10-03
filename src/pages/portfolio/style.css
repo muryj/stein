@@ -16,7 +16,7 @@
     flex-basis: 23%; /* Adjust the flex-basis to fit 4 items in a row */
     position: relative;
     background: var(--primary-color);
-    border: 1px solid var(--secondary-color);
+    border: 1px solid lightgray;
     transition: 0.3s ease;
     font-size: 0;
     aspect-ratio: 1 / 1;

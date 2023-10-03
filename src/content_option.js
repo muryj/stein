@@ -382,10 +382,9 @@ const publications = [
         description: "Ольга Штейн для WONDERZIN про власний простір",
         defaultMedia: publication22
     },
-]
+].reverse()
 const contactConfig = {
     YOUR_EMAIL: "stein2studio@gmail.com",
-    YOUR_FONE: "+38(063)-435-22-68",
     description: "Please contact me regarding any questions you have using this form.",
     // creat an emailjs.com account
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -430,22 +429,27 @@ const dataportfolio = [
         isGroupProject: true,
         projects: [
             {
+                title: 'LAND 0',
                 img: landMasonry,
                 link: "land",
             },
             {
+                title: 'LAND I',
                 img: landSub1Masonry,
                 link: "birth",
             },
             {
+                title: 'LAND II',
                 img: landSub2Masonry,
                 link: "values",
             },
             {
+                title: 'LAND III',
                 img: landSub3Masonry,
                 link: 'miscarriageShield',
             },
             {
+                title: 'LAND IV',
                 img: landSub4Masonry,
                 link: "gardenOfStones",
             },
@@ -457,25 +461,29 @@ const dataportfolio = [
         isGroupProject: true,
         projects: [
             {
+                title: 'BREAD 0',
                 img: breadMasonry,
                 link: "bread",
             },
             {
+                title: 'BREAD I',
                 img: breadSub1Masonry,
                 link: "breadPath",
             },
             {
+                title: 'BREAD II',
                 img: breadSub2Masonry,
                 link: "breadToys",
             },
             {
+                title: 'BREAD III',
                 img: breadSub3Masonry,
                 link: "breadHarvestSongs",
             },
         ]
     },
     {
-        groupName: 'SOLO PROJECTS',
+        groupName: 'MONO PROJECTS',
         projects: [
             // {
             //     img: utopiaMasonry,
@@ -528,6 +536,7 @@ const projects = {
         isGroupProject: true,
         projects: [
             {
+                title: 'LAND 0',
                 anchor: 'land',
                 main: {
                     title: 'LAND',
@@ -544,6 +553,7 @@ const projects = {
                 ]
             },
             {
+                title: 'LAND I',
                 anchor: 'birth',
                 main: {
                     title: 'LAND Chapter I: BIRTH',
@@ -577,6 +587,7 @@ const projects = {
                 ]
             },
             {
+                title: 'LAND II',
                 anchor: 'values',
                 main: {
                     title: 'LAND Chapter II: VALUES',
@@ -605,6 +616,7 @@ const projects = {
                 ]
             },
             {
+                title: 'LAND III',
                 anchor: 'miscarriageShield',
                 main: {
                     title: 'LAND Chapter III: MISCARRIAGE SHIELD',
@@ -643,6 +655,7 @@ const projects = {
                 ]
             },
             {
+                title: 'LAND IV',
                 anchor: 'gardenOfStones',
                 main: {
                     title: 'LAND Chapter IV: GARDEN OF STONE',
@@ -681,6 +694,7 @@ const projects = {
         metaDescription: 'Project, installation',
         projects: [
             {
+                title: 'BREAD 0',
                 anchor: 'bread',
                 main: {
                     title: 'Bread',
@@ -700,6 +714,7 @@ const projects = {
                 ]
             },
             {
+                title: 'BREAD I',
                 anchor: 'breadPath',
                 main: {
                     title: 'Bread Chapter I: The Path Of Bread',
@@ -746,6 +761,7 @@ const projects = {
                 ]
             },
             {
+                title: 'BREAD II',
                 anchor: 'breadToys',
                 main: {
                     title: 'Bread Chapter II: Toys',
@@ -804,6 +820,7 @@ const projects = {
 
             },
             {
+                title: 'BREAD III',
                 anchor: 'breadHarvestSongs',
                 main: {
                     title: 'Bread Chapter III: Harvest Song',

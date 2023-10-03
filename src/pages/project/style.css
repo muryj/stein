@@ -122,7 +122,6 @@ body {
         flex-direction: column; /* Display main section in a column on smaller screens */
         align-items: center;
         height: 50vh;
-        margin-top: 70px;
     }
 
     .main-image img {
@@ -140,6 +139,7 @@ body {
     .single-image {
         flex-direction: column; /* Display main section in a column on smaller screens */
         align-items: center;
+        margin-bottom: 50px;
     }
 
     .text {
